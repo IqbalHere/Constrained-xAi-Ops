@@ -1,0 +1,65 @@
+# Default configuration for Constrained-xAIOps pipeline
+dataset_name: "RE1-OB"
+raw_dir: "data/raw/rcaeval"
+interim_dir: "data/interim"
+processed_dir: "data/processed"
+artifacts_dir: "artifacts"
+
+# Timing parameters
+pre_fault_buffer_sec: 10
+window_size: 60
+post_fault_window_sec: 300
+
+# Evaluation & Seeds
+seeds:
+  - 42
+  - 1024
+  - 2025
+  - 2026
+  - 7777
+
+# Microservice System Defaults
+system: "OnlineBoutique"
+num_services: 10
+chance_at_5: 0.50
+
+# Core Algorithmic Hyperparameters
+hyperparameters:
+  tau_T_conformal: 0.85
+  tau_A_incident: 0.35
+  lambda_mnar: 3.5
+  conformal_coverage: 0.85
+  conformal_alpha: 0.15
+  stale_freeze_threshold_sec: 60
+  imputation_method: "forward_fill"
+  knn_neighbors: 5
+  robust_zscore_threshold: 3.0
+  isolation_forest_contamination: 0.05
+  bocpd_hazard_lambda: 100.0
+
+# Paper Publication & Manuscript Metadata
+paper:
+  title: "Constrained-xAIOps: Data-Quality-Aware, Explainable AIOps for Anomaly Detection and Root-Cause Analysis in Constrained Cloud Environments"
+  authors:
+    - name: "S. Ashok"
+      superscript: "1"
+      email: "ashokasume@gmail.com"
+    - name: "SM. Iqbal Hussain"
+      superscript: "1"
+      email: "smiqbalhussain13@gmail.com"
+    - name: "S. Sri Durga"
+      superscript: "1"
+      email: "sennerapsridurga@gmail.com"
+    - name: "Shaik Abdul Mannan"
+      superscript: "1"
+      email: "Shaikabdulmannan68@gmail.com"
+  affiliations:
+    - id: "1"
+      text: "Department of Artificial Intelligence and Machine Learning, Malla Reddy University, Hyderabad, India."
+  keywords:
+    - "Cloud Observability"
+    - "Explainable AIOps"
+    - "Telemetry Trust Score"
+    - "Selective Prediction"
+    - "Root-Cause Analysis"
+    - "Missing Not At Random (MNAR)"

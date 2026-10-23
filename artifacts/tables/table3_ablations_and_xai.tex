@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Summary of Core Ablations (ABL-01 through ABL-10) and Explanation Fidelity.}
+\label{tab:ablations}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|l|cc}
+\hline
+\textbf{Ablation ID} & \textbf{Configuration} & \textbf{Primary Metric} & \textbf{Value} \\
+\hline
+ABL-01 & Unguarded BARO AC@3 & AC@3 & 32.2\% \\
+ABL-01 & Trust-Gated Constrained AC@3 & AC@3 & 83.9\% \\
+ABL-02 & Heuristic Gate ($\tau_T=0.50$) & Coverage & 100.0\% \\
+ABL-02 & Conformal Gate ($\tau_T=0.85$) & Coverage & 100.0\% \\
+ABL-03 & Passive Abstention Coverage & Coverage & 2.3\% \\
+ABL-03 & Dual-Branch Escalator Coverage & Coverage & 100.0\% \\
+ABL-05 & Completeness Only ($T=C$) AC@3 & AC@3 & 93.1\% \\
+ABL-05 & Full 5D Trust Score AC@3 & AC@3 & 83.9\% \\
+ABL-08 & Naive TreeSHAP Fidelity@1 & Fid@1 & 13.3\% \\
+ABL-08 & Missingness-Aware TreeSHAP Fid@1 & Fid@1 & 6.7\% \\
+ABL-08 & TreeSHAP Jaccard Stability@3 & Jaccard@3 & 0.680 \\
+\hline
+\end{tabular}
+}
+\end{table}

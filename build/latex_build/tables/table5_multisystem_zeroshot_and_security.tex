@@ -1,0 +1,53 @@
+\begin{table*}[t]
+\centering
+\caption{Multi-System Benchmark across 375 Failure Cases (RE1-OB, RE1-SS, RE1-TT), Zero-Shot Cross-System Generalization, and Telemetry Poisoning / Stale-Freeze Defense.}
+\label{tab:multisystem_zeroshot_security}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ll|ccc|ccc|ccc}
+\hline
+\multicolumn{11}{c}{\textbf{Panel A: Multi-System Benchmark under Clean vs. 40\% Incident-Driven MNAR (375 Real RCAEval Cases across 3 Systems)}} \\
+\hline
+\textbf{System} & \textbf{Model / Method} & \multicolumn{3}{c|}{\textbf{Clean (0\% Missing)}} & \multicolumn{3}{c|}{\textbf{40\% MNAR Blackout}} & \textbf{Coverage} & \textbf{Lift@5} & \textbf{Advantage} \\
+ & & AC@1 & AC@3 & MRR & AC@1 & AC@3 & MRR & (40\% MNAR) & (40\% MNAR) & ($\Delta$ AC@3) \\
+\hline
+\multicolumn{11}{l}{\textit{Online Boutique (10 svcs)}} \\
+ & Vanilla BARO & 65.6 & 93.6 & 0.807 & 13.8 & 36.8 & 0.334 & 100.0\% & +0.055 & --- \\
+ & $\epsilon$-Diagnosis & 61.6 & 92.0 & 0.769 & 25.8 & 66.7 & 0.496 & 100.0\% & +0.346 & +29.9\% \\
+ & CIRCA (KDD '22) & 72.8 & 95.2 & 0.843 & 8.5 & 29.0 & 0.277 & 100.0\% & -0.038 & -7.8\% \\
+ & RCD (NeurIPS '22) & 66.4 & 95.2 & 0.812 & 18.6 & 46.1 & 0.393 & 100.0\% & +0.142 & +9.3\% \\
+ & Passive Conformal & 65.6 & 93.6 & 0.807 & 13.8 & 36.8 & 0.334 & 1.6\% & +0.055 & +0.0\% \\
+ & \textbf{Constrained-xAIOps (Ours)} & \textbf{64.8} & \textbf{94.4} & \textbf{0.792} & \textbf{56.3} & \textbf{83.8} & \textbf{0.717} & \textbf{100.0\%} & \textbf{+0.441} & \textbf{+47.0\%} \\
+\hline
+\multicolumn{11}{l}{\textit{Sock Shop (13 svcs)}} \\
+ & Vanilla BARO & 63.2 & 92.0 & 0.781 & 16.6 & 51.0 & 0.389 & 100.0\% & +0.303 & --- \\
+ & $\epsilon$-Diagnosis & 12.0 & 21.6 & 0.288 & 1.1 & 4.0 & 0.145 & 100.0\% & -0.249 & -47.0\% \\
+ & CIRCA (KDD '22) & 84.8 & 96.0 & 0.907 & 10.4 & 29.1 & 0.283 & 100.0\% & +0.097 & -21.9\% \\
+ & RCD (NeurIPS '22) & 79.2 & 93.6 & 0.871 & 17.9 & 50.4 & 0.398 & 100.0\% & +0.311 & -0.6\% \\
+ & Passive Conformal & 63.2 & 92.0 & 0.781 & 16.6 & 51.0 & 0.389 & 0.0\% & +0.303 & +0.0\% \\
+ & \textbf{Constrained-xAIOps (Ours)} & \textbf{61.6} & \textbf{91.2} & \textbf{0.769} & \textbf{27.5} & \textbf{52.8} & \textbf{0.469} & \textbf{100.0\%} & \textbf{+0.355} & \textbf{+1.8\%} \\
+\hline
+\multicolumn{11}{l}{\textit{Train Ticket (40 svcs)}} \\
+ & Vanilla BARO & 48.8 & 63.2 & 0.585 & 3.2 & 7.8 & 0.120 & 100.0\% & +0.055 & --- \\
+ & $\epsilon$-Diagnosis & 0.0 & 4.8 & 0.099 & 0.2 & 0.3 & 0.047 & 100.0\% & -0.065 & -7.5\% \\
+ & CIRCA (KDD '22) & 59.2 & 60.0 & 0.619 & 2.6 & 7.7 & 0.097 & 100.0\% & +0.047 & -0.2\% \\
+ & RCD (NeurIPS '22) & 51.2 & 60.8 & 0.592 & 2.9 & 10.1 & 0.136 & 100.0\% & +0.088 & +2.2\% \\
+ & Passive Conformal & 48.8 & 63.2 & 0.585 & 3.2 & 7.8 & 0.120 & 0.0\% & +0.055 & +0.0\% \\
+ & \textbf{Constrained-xAIOps (Ours)} & \textbf{48.8} & \textbf{62.4} & \textbf{0.569} & \textbf{19.0} & \textbf{64.6} & \textbf{0.444} & \textbf{100.0\%} & \textbf{+0.714} & \textbf{+56.8\%} \\
+\hline
+\multicolumn{11}{c}{\textbf{Panel B: Zero-Shot Cross-System Generalization (Trained on Online Boutique, Evaluated on Unseen Systems)}} \\
+\hline
+\textbf{Target Architecture} & \textbf{Test Cases} & \multicolumn{2}{c}{\textbf{In-Domain AC@3}} & \multicolumn{2}{c}{\textbf{Zero-Shot AC@3}} & \multicolumn{2}{c|}{\textbf{Generalization Gap}} & \multicolumn{3}{c}{\textbf{Accuracy Retention Rate}} \\
+\hline
+Sock Shop (Node.js/Go/Java) & 63 & \multicolumn{2}{c}{57.1\%} & \multicolumn{2}{c}{57.1\%} & \multicolumn{2}{c|}{+0.0\%} & \multicolumn{3}{c}{\textbf{100.0\%} (Zero Generalization Gap)} \\
+Train Ticket (Java 40-Microservices) & 63 & \multicolumn{2}{c}{60.3\%} & \multicolumn{2}{c}{78.1\%} & \multicolumn{2}{c|}{-17.8\%} & \multicolumn{3}{c}{\textbf{129.5\%} (+17.8\% Superior Localization)} \\
+\hline
+\multicolumn{11}{c}{\textbf{Panel C: Telemetry Poisoning \& Exporter Stale-Freeze Defense (Security Evaluation, 75 Evaluated Cases)}} \\
+\hline
+\textbf{Adversarial Scenario} & \textbf{Detection Rate} & \textbf{Key Degradation Metric} & \multicolumn{3}{c|}{\textbf{Baseline AC@3 (BARO / CIRCA / RCD)}} & \multicolumn{3}{c|}{\textbf{Constrained-xAIOps (Ours)}} & \multicolumn{2}{c}{\textbf{Accuracy Advantage}} \\
+\hline
+Exporter Stale-Freeze & 29.6\% & Timeliness $L=0.631$ & 12.8\% & 20.0\% & 16.3\% & \multicolumn{3}{c|}{\textbf{19.5\%}} & \multicolumn{2}{c}{\textbf{+6.7\% vs BARO}} \\
+Adversarial Telemetry Spoofing & 41.3\% & Consist. $S=0.986$, Valid. $V=0.976$ & 100.0\% & 92.5\% & 99.2\% & \multicolumn{3}{c|}{\textbf{99.5\%}} & \multicolumn{2}{c}{\textbf{-0.5\% (Gated Safe)}} \\
+\hline
+\end{tabular}
+}
+\end{table*}

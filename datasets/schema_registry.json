@@ -1,0 +1,1611 @@
+{
+  "dataset_name": "RCAEval RE1 (Multi-System Benchmark)",
+  "systems_included": [
+    "OnlineBoutique",
+    "SockShop",
+    "TrainTicket"
+  ],
+  "total_cases": 375,
+  "total_services": 141,
+  "fault_distribution": {
+    "cpu": 75,
+    "delay": 75,
+    "disk": 75,
+    "loss": 75,
+    "mem": 75
+  },
+  "services": [
+    "10-192-15-195-9100",
+    "10-192-15-196-9100",
+    "10-192-15-197-9100",
+    "10-192-15-219-9100",
+    "10-192-15-221-9100",
+    "10-192-15-222-9100",
+    "10-192-15-223-9100",
+    "10-192-15-224-9100",
+    "10-192-15-225-9100",
+    "10-192-15-226-9100",
+    "192-168-10-83-9100",
+    "192-168-15-8-9100",
+    "192-168-18-57-9100",
+    "192-168-2-165-9100",
+    "192-168-22-131-9100",
+    "192-168-25-221-9100",
+    "192-168-26-82-9100",
+    "192-168-27-60-9100",
+    "192-168-29-237-9100",
+    "192-168-31-243-9100",
+    "192-168-33-0-9100",
+    "192-168-33-39-9100",
+    "192-168-34-36-9100",
+    "192-168-37-154-9100",
+    "192-168-45-158-9100",
+    "192-168-51-251-9100",
+    "192-168-53-168-9100",
+    "192-168-56-14-9100",
+    "192-168-57-5-9100",
+    "192-168-60-79-9100",
+    "192-168-61-95-9100",
+    "192-168-64-231-9100",
+    "192-168-76-116-9100",
+    "192-168-76-138-9100",
+    "192-168-77-58-9100",
+    "192-168-80-141-9100",
+    "192-168-85-112-9100",
+    "192-168-90-135-9100",
+    "192-168-90-92-9100",
+    "192-168-93-129-9100",
+    "192-168-95-91-9100",
+    "InboundPassthroughClusterIpv4",
+    "PassthroughCluster",
+    "adservice",
+    "carts",
+    "carts-db",
+    "cartservice",
+    "catalogue",
+    "catalogue-db",
+    "checkoutservice",
+    "currencyservice",
+    "emailservice",
+    "front",
+    "front-end",
+    "frontend",
+    "frontend-check",
+    "frontend-external",
+    "istio-init",
+    "main",
+    "orders",
+    "orders-db",
+    "payment",
+    "paymentservice",
+    "productcatalogservice",
+    "queue",
+    "queue-master",
+    "rabbitmq",
+    "rabbitmq-exporter",
+    "recommendationservice",
+    "redis",
+    "session",
+    "session-db",
+    "shipping",
+    "shippingservice",
+    "ts",
+    "ts-admin-basic-info-service",
+    "ts-admin-order-service",
+    "ts-admin-route-service",
+    "ts-admin-travel-service",
+    "ts-admin-user-service",
+    "ts-assurance-mongo",
+    "ts-assurance-service",
+    "ts-auth-mongo",
+    "ts-auth-service",
+    "ts-avatar-service",
+    "ts-basic-service",
+    "ts-cancel-service",
+    "ts-config-mongo",
+    "ts-config-service",
+    "ts-consign-mongo",
+    "ts-consign-price-mongo",
+    "ts-consign-price-service",
+    "ts-consign-service",
+    "ts-contacts-mongo",
+    "ts-contacts-service",
+    "ts-execute-service",
+    "ts-food-map-mongo",
+    "ts-food-map-service",
+    "ts-food-mongo",
+    "ts-food-service",
+    "ts-inside-payment-mongo",
+    "ts-inside-payment-service",
+    "ts-news-service",
+    "ts-notification-service",
+    "ts-order-mongo",
+    "ts-order-other-mongo",
+    "ts-order-other-service",
+    "ts-order-service",
+    "ts-payment-mongo",
+    "ts-payment-service",
+    "ts-preserve-other-service",
+    "ts-preserve-service",
+    "ts-price-mongo",
+    "ts-price-service",
+    "ts-rebook-service",
+    "ts-route-mongo",
+    "ts-route-plan-service",
+    "ts-route-service",
+    "ts-seat-service",
+    "ts-security-mongo",
+    "ts-security-service",
+    "ts-station-mongo",
+    "ts-station-service",
+    "ts-ticket-office-mongo",
+    "ts-ticket-office-service",
+    "ts-ticketinfo-service",
+    "ts-train-mongo",
+    "ts-train-service",
+    "ts-travel-mongo",
+    "ts-travel-plan-service",
+    "ts-travel-service",
+    "ts-travel2-mongo",
+    "ts-travel2-service",
+    "ts-ui-dashboard",
+    "ts-user-mongo",
+    "ts-user-service",
+    "ts-verification-code-service",
+    "ts-voucher-mysql",
+    "ts-voucher-service",
+    "user",
+    "user-db"
+  ],
+  "metric_counts_per_service": {
+    "10-192-15-195-9100": 13,
+    "10-192-15-196-9100": 13,
+    "10-192-15-197-9100": 13,
+    "10-192-15-219-9100": 13,
+    "10-192-15-221-9100": 13,
+    "10-192-15-222-9100": 13,
+    "10-192-15-223-9100": 13,
+    "10-192-15-224-9100": 13,
+    "10-192-15-225-9100": 13,
+    "10-192-15-226-9100": 13,
+    "192-168-10-83-9100": 13,
+    "192-168-15-8-9100": 13,
+    "192-168-18-57-9100": 13,
+    "192-168-2-165-9100": 13,
+    "192-168-22-131-9100": 13,
+    "192-168-25-221-9100": 13,
+    "192-168-26-82-9100": 13,
+    "192-168-27-60-9100": 13,
+    "192-168-29-237-9100": 13,
+    "192-168-31-243-9100": 13,
+    "192-168-33-0-9100": 13,
+    "192-168-33-39-9100": 13,
+    "192-168-34-36-9100": 13,
+    "192-168-37-154-9100": 13,
+    "192-168-45-158-9100": 13,
+    "192-168-51-251-9100": 13,
+    "192-168-53-168-9100": 13,
+    "192-168-56-14-9100": 13,
+    "192-168-57-5-9100": 13,
+    "192-168-60-79-9100": 13,
+    "192-168-61-95-9100": 13,
+    "192-168-64-231-9100": 13,
+    "192-168-76-116-9100": 13,
+    "192-168-76-138-9100": 13,
+    "192-168-77-58-9100": 13,
+    "192-168-80-141-9100": 13,
+    "192-168-85-112-9100": 13,
+    "192-168-90-135-9100": 13,
+    "192-168-90-92-9100": 13,
+    "192-168-93-129-9100": 13,
+    "192-168-95-91-9100": 13,
+    "InboundPassthroughClusterIpv4": 2,
+    "PassthroughCluster": 2,
+    "adservice": 8,
+    "carts": 37,
+    "carts-db": 17,
+    "cartservice": 8,
+    "catalogue": 37,
+    "catalogue-db": 16,
+    "checkoutservice": 8,
+    "currencyservice": 7,
+    "emailservice": 7,
+    "front": 8,
+    "front-end": 24,
+    "frontend": 8,
+    "frontend-check": 1,
+    "frontend-external": 3,
+    "istio-init": 7,
+    "main": 2,
+    "orders": 37,
+    "orders-db": 17,
+    "payment": 35,
+    "paymentservice": 8,
+    "productcatalogservice": 8,
+    "queue": 8,
+    "queue-master": 27,
+    "rabbitmq": 24,
+    "rabbitmq-exporter": 12,
+    "recommendationservice": 7,
+    "redis": 2,
+    "session": 8,
+    "session-db": 16,
+    "shipping": 31,
+    "shippingservice": 7,
+    "ts": 8,
+    "ts-admin-basic-info-service": 27,
+    "ts-admin-order-service": 17,
+    "ts-admin-route-service": 17,
+    "ts-admin-travel-service": 27,
+    "ts-admin-user-service": 17,
+    "ts-assurance-mongo": 16,
+    "ts-assurance-service": 27,
+    "ts-auth-mongo": 16,
+    "ts-auth-service": 27,
+    "ts-avatar-service": 17,
+    "ts-basic-service": 27,
+    "ts-cancel-service": 17,
+    "ts-config-mongo": 16,
+    "ts-config-service": 27,
+    "ts-consign-mongo": 16,
+    "ts-consign-price-mongo": 16,
+    "ts-consign-price-service": 26,
+    "ts-consign-service": 27,
+    "ts-contacts-mongo": 16,
+    "ts-contacts-service": 27,
+    "ts-execute-service": 17,
+    "ts-food-map-mongo": 16,
+    "ts-food-map-service": 27,
+    "ts-food-mongo": 16,
+    "ts-food-service": 27,
+    "ts-inside-payment-mongo": 16,
+    "ts-inside-payment-service": 27,
+    "ts-news-service": 13,
+    "ts-notification-service": 26,
+    "ts-order-mongo": 16,
+    "ts-order-other-mongo": 16,
+    "ts-order-other-service": 27,
+    "ts-order-service": 27,
+    "ts-payment-mongo": 16,
+    "ts-payment-service": 26,
+    "ts-preserve-other-service": 27,
+    "ts-preserve-service": 27,
+    "ts-price-mongo": 16,
+    "ts-price-service": 27,
+    "ts-rebook-service": 17,
+    "ts-route-mongo": 16,
+    "ts-route-plan-service": 17,
+    "ts-route-service": 27,
+    "ts-seat-service": 27,
+    "ts-security-mongo": 16,
+    "ts-security-service": 27,
+    "ts-station-mongo": 16,
+    "ts-station-service": 27,
+    "ts-ticket-office-mongo": 16,
+    "ts-ticket-office-service": 17,
+    "ts-ticketinfo-service": 27,
+    "ts-train-mongo": 16,
+    "ts-train-service": 27,
+    "ts-travel-mongo": 16,
+    "ts-travel-plan-service": 17,
+    "ts-travel-service": 27,
+    "ts-travel2-mongo": 16,
+    "ts-travel2-service": 27,
+    "ts-ui-dashboard": 27,
+    "ts-user-mongo": 16,
+    "ts-user-service": 27,
+    "ts-verification-code-service": 17,
+    "ts-voucher-mysql": 16,
+    "ts-voucher-service": 17,
+    "user": 35,
+    "user-db": 17
+  },
+  "sample_metrics": {
+    "10-192-15-195-9100": [
+      "10-192-15-195-9100_node-cpu-seconds-total",
+      "10-192-15-195-9100_node-disk-read-bytes-total",
+      "10-192-15-195-9100_node-disk-reads-completed-total",
+      "10-192-15-195-9100_node-disk-writes-completed-total",
+      "10-192-15-195-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-196-9100": [
+      "10-192-15-196-9100_node-cpu-seconds-total",
+      "10-192-15-196-9100_node-disk-read-bytes-total",
+      "10-192-15-196-9100_node-disk-reads-completed-total",
+      "10-192-15-196-9100_node-disk-writes-completed-total",
+      "10-192-15-196-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-197-9100": [
+      "10-192-15-197-9100_node-cpu-seconds-total",
+      "10-192-15-197-9100_node-disk-read-bytes-total",
+      "10-192-15-197-9100_node-disk-reads-completed-total",
+      "10-192-15-197-9100_node-disk-writes-completed-total",
+      "10-192-15-197-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-219-9100": [
+      "10-192-15-219-9100_node-cpu-seconds-total",
+      "10-192-15-219-9100_node-disk-read-bytes-total",
+      "10-192-15-219-9100_node-disk-reads-completed-total",
+      "10-192-15-219-9100_node-disk-writes-completed-total",
+      "10-192-15-219-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-221-9100": [
+      "10-192-15-221-9100_node-cpu-seconds-total",
+      "10-192-15-221-9100_node-disk-read-bytes-total",
+      "10-192-15-221-9100_node-disk-reads-completed-total",
+      "10-192-15-221-9100_node-disk-writes-completed-total",
+      "10-192-15-221-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-222-9100": [
+      "10-192-15-222-9100_node-cpu-seconds-total",
+      "10-192-15-222-9100_node-disk-read-bytes-total",
+      "10-192-15-222-9100_node-disk-reads-completed-total",
+      "10-192-15-222-9100_node-disk-writes-completed-total",
+      "10-192-15-222-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-223-9100": [
+      "10-192-15-223-9100_node-cpu-seconds-total",
+      "10-192-15-223-9100_node-disk-read-bytes-total",
+      "10-192-15-223-9100_node-disk-reads-completed-total",
+      "10-192-15-223-9100_node-disk-writes-completed-total",
+      "10-192-15-223-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-224-9100": [
+      "10-192-15-224-9100_node-cpu-seconds-total",
+      "10-192-15-224-9100_node-disk-read-bytes-total",
+      "10-192-15-224-9100_node-disk-reads-completed-total",
+      "10-192-15-224-9100_node-disk-writes-completed-total",
+      "10-192-15-224-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-225-9100": [
+      "10-192-15-225-9100_node-cpu-seconds-total",
+      "10-192-15-225-9100_node-disk-read-bytes-total",
+      "10-192-15-225-9100_node-disk-reads-completed-total",
+      "10-192-15-225-9100_node-disk-writes-completed-total",
+      "10-192-15-225-9100_node-disk-written-bytes-total"
+    ],
+    "10-192-15-226-9100": [
+      "10-192-15-226-9100_node-cpu-seconds-total",
+      "10-192-15-226-9100_node-disk-read-bytes-total",
+      "10-192-15-226-9100_node-disk-reads-completed-total",
+      "10-192-15-226-9100_node-disk-writes-completed-total",
+      "10-192-15-226-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-10-83-9100": [
+      "192-168-10-83-9100_node-cpu-seconds-total",
+      "192-168-10-83-9100_node-disk-read-bytes-total",
+      "192-168-10-83-9100_node-disk-reads-completed-total",
+      "192-168-10-83-9100_node-disk-writes-completed-total",
+      "192-168-10-83-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-15-8-9100": [
+      "192-168-15-8-9100_node-cpu-seconds-total",
+      "192-168-15-8-9100_node-disk-read-bytes-total",
+      "192-168-15-8-9100_node-disk-reads-completed-total",
+      "192-168-15-8-9100_node-disk-writes-completed-total",
+      "192-168-15-8-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-18-57-9100": [
+      "192-168-18-57-9100_node-cpu-seconds-total",
+      "192-168-18-57-9100_node-disk-read-bytes-total",
+      "192-168-18-57-9100_node-disk-reads-completed-total",
+      "192-168-18-57-9100_node-disk-writes-completed-total",
+      "192-168-18-57-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-2-165-9100": [
+      "192-168-2-165-9100_node-cpu-seconds-total",
+      "192-168-2-165-9100_node-disk-read-bytes-total",
+      "192-168-2-165-9100_node-disk-reads-completed-total",
+      "192-168-2-165-9100_node-disk-writes-completed-total",
+      "192-168-2-165-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-22-131-9100": [
+      "192-168-22-131-9100_node-cpu-seconds-total",
+      "192-168-22-131-9100_node-disk-read-bytes-total",
+      "192-168-22-131-9100_node-disk-reads-completed-total",
+      "192-168-22-131-9100_node-disk-writes-completed-total",
+      "192-168-22-131-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-25-221-9100": [
+      "192-168-25-221-9100_node-cpu-seconds-total",
+      "192-168-25-221-9100_node-disk-read-bytes-total",
+      "192-168-25-221-9100_node-disk-reads-completed-total",
+      "192-168-25-221-9100_node-disk-writes-completed-total",
+      "192-168-25-221-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-26-82-9100": [
+      "192-168-26-82-9100_node-cpu-seconds-total",
+      "192-168-26-82-9100_node-disk-read-bytes-total",
+      "192-168-26-82-9100_node-disk-reads-completed-total",
+      "192-168-26-82-9100_node-disk-writes-completed-total",
+      "192-168-26-82-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-27-60-9100": [
+      "192-168-27-60-9100_node-cpu-seconds-total",
+      "192-168-27-60-9100_node-disk-read-bytes-total",
+      "192-168-27-60-9100_node-disk-reads-completed-total",
+      "192-168-27-60-9100_node-disk-writes-completed-total",
+      "192-168-27-60-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-29-237-9100": [
+      "192-168-29-237-9100_node-cpu-seconds-total",
+      "192-168-29-237-9100_node-disk-read-bytes-total",
+      "192-168-29-237-9100_node-disk-reads-completed-total",
+      "192-168-29-237-9100_node-disk-writes-completed-total",
+      "192-168-29-237-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-31-243-9100": [
+      "192-168-31-243-9100_node-cpu-seconds-total",
+      "192-168-31-243-9100_node-disk-read-bytes-total",
+      "192-168-31-243-9100_node-disk-reads-completed-total",
+      "192-168-31-243-9100_node-disk-writes-completed-total",
+      "192-168-31-243-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-33-0-9100": [
+      "192-168-33-0-9100_node-cpu-seconds-total",
+      "192-168-33-0-9100_node-disk-read-bytes-total",
+      "192-168-33-0-9100_node-disk-reads-completed-total",
+      "192-168-33-0-9100_node-disk-writes-completed-total",
+      "192-168-33-0-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-33-39-9100": [
+      "192-168-33-39-9100_node-cpu-seconds-total",
+      "192-168-33-39-9100_node-disk-read-bytes-total",
+      "192-168-33-39-9100_node-disk-reads-completed-total",
+      "192-168-33-39-9100_node-disk-writes-completed-total",
+      "192-168-33-39-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-34-36-9100": [
+      "192-168-34-36-9100_node-cpu-seconds-total",
+      "192-168-34-36-9100_node-disk-read-bytes-total",
+      "192-168-34-36-9100_node-disk-reads-completed-total",
+      "192-168-34-36-9100_node-disk-writes-completed-total",
+      "192-168-34-36-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-37-154-9100": [
+      "192-168-37-154-9100_node-cpu-seconds-total",
+      "192-168-37-154-9100_node-disk-read-bytes-total",
+      "192-168-37-154-9100_node-disk-reads-completed-total",
+      "192-168-37-154-9100_node-disk-writes-completed-total",
+      "192-168-37-154-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-45-158-9100": [
+      "192-168-45-158-9100_node-cpu-seconds-total",
+      "192-168-45-158-9100_node-disk-read-bytes-total",
+      "192-168-45-158-9100_node-disk-reads-completed-total",
+      "192-168-45-158-9100_node-disk-writes-completed-total",
+      "192-168-45-158-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-51-251-9100": [
+      "192-168-51-251-9100_node-cpu-seconds-total",
+      "192-168-51-251-9100_node-disk-read-bytes-total",
+      "192-168-51-251-9100_node-disk-reads-completed-total",
+      "192-168-51-251-9100_node-disk-writes-completed-total",
+      "192-168-51-251-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-53-168-9100": [
+      "192-168-53-168-9100_node-cpu-seconds-total",
+      "192-168-53-168-9100_node-disk-read-bytes-total",
+      "192-168-53-168-9100_node-disk-reads-completed-total",
+      "192-168-53-168-9100_node-disk-writes-completed-total",
+      "192-168-53-168-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-56-14-9100": [
+      "192-168-56-14-9100_node-cpu-seconds-total",
+      "192-168-56-14-9100_node-disk-read-bytes-total",
+      "192-168-56-14-9100_node-disk-reads-completed-total",
+      "192-168-56-14-9100_node-disk-writes-completed-total",
+      "192-168-56-14-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-57-5-9100": [
+      "192-168-57-5-9100_node-cpu-seconds-total",
+      "192-168-57-5-9100_node-disk-read-bytes-total",
+      "192-168-57-5-9100_node-disk-reads-completed-total",
+      "192-168-57-5-9100_node-disk-writes-completed-total",
+      "192-168-57-5-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-60-79-9100": [
+      "192-168-60-79-9100_node-cpu-seconds-total",
+      "192-168-60-79-9100_node-disk-read-bytes-total",
+      "192-168-60-79-9100_node-disk-reads-completed-total",
+      "192-168-60-79-9100_node-disk-writes-completed-total",
+      "192-168-60-79-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-61-95-9100": [
+      "192-168-61-95-9100_node-cpu-seconds-total",
+      "192-168-61-95-9100_node-disk-read-bytes-total",
+      "192-168-61-95-9100_node-disk-reads-completed-total",
+      "192-168-61-95-9100_node-disk-writes-completed-total",
+      "192-168-61-95-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-64-231-9100": [
+      "192-168-64-231-9100_node-cpu-seconds-total",
+      "192-168-64-231-9100_node-disk-read-bytes-total",
+      "192-168-64-231-9100_node-disk-reads-completed-total",
+      "192-168-64-231-9100_node-disk-writes-completed-total",
+      "192-168-64-231-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-76-116-9100": [
+      "192-168-76-116-9100_node-cpu-seconds-total",
+      "192-168-76-116-9100_node-disk-read-bytes-total",
+      "192-168-76-116-9100_node-disk-reads-completed-total",
+      "192-168-76-116-9100_node-disk-writes-completed-total",
+      "192-168-76-116-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-76-138-9100": [
+      "192-168-76-138-9100_node-cpu-seconds-total",
+      "192-168-76-138-9100_node-disk-read-bytes-total",
+      "192-168-76-138-9100_node-disk-reads-completed-total",
+      "192-168-76-138-9100_node-disk-writes-completed-total",
+      "192-168-76-138-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-77-58-9100": [
+      "192-168-77-58-9100_node-cpu-seconds-total",
+      "192-168-77-58-9100_node-disk-read-bytes-total",
+      "192-168-77-58-9100_node-disk-reads-completed-total",
+      "192-168-77-58-9100_node-disk-writes-completed-total",
+      "192-168-77-58-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-80-141-9100": [
+      "192-168-80-141-9100_node-cpu-seconds-total",
+      "192-168-80-141-9100_node-disk-read-bytes-total",
+      "192-168-80-141-9100_node-disk-reads-completed-total",
+      "192-168-80-141-9100_node-disk-writes-completed-total",
+      "192-168-80-141-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-85-112-9100": [
+      "192-168-85-112-9100_node-cpu-seconds-total",
+      "192-168-85-112-9100_node-disk-read-bytes-total",
+      "192-168-85-112-9100_node-disk-reads-completed-total",
+      "192-168-85-112-9100_node-disk-writes-completed-total",
+      "192-168-85-112-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-90-135-9100": [
+      "192-168-90-135-9100_node-cpu-seconds-total",
+      "192-168-90-135-9100_node-disk-read-bytes-total",
+      "192-168-90-135-9100_node-disk-reads-completed-total",
+      "192-168-90-135-9100_node-disk-writes-completed-total",
+      "192-168-90-135-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-90-92-9100": [
+      "192-168-90-92-9100_node-cpu-seconds-total",
+      "192-168-90-92-9100_node-disk-read-bytes-total",
+      "192-168-90-92-9100_node-disk-reads-completed-total",
+      "192-168-90-92-9100_node-disk-writes-completed-total",
+      "192-168-90-92-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-93-129-9100": [
+      "192-168-93-129-9100_node-cpu-seconds-total",
+      "192-168-93-129-9100_node-disk-read-bytes-total",
+      "192-168-93-129-9100_node-disk-reads-completed-total",
+      "192-168-93-129-9100_node-disk-writes-completed-total",
+      "192-168-93-129-9100_node-disk-written-bytes-total"
+    ],
+    "192-168-95-91-9100": [
+      "192-168-95-91-9100_node-cpu-seconds-total",
+      "192-168-95-91-9100_node-disk-read-bytes-total",
+      "192-168-95-91-9100_node-disk-reads-completed-total",
+      "192-168-95-91-9100_node-disk-writes-completed-total",
+      "192-168-95-91-9100_node-disk-written-bytes-total"
+    ],
+    "InboundPassthroughClusterIpv4": [
+      "InboundPassthroughClusterIpv4_error",
+      "InboundPassthroughClusterIpv4_load"
+    ],
+    "PassthroughCluster": [
+      "PassthroughCluster_error",
+      "PassthroughCluster_load"
+    ],
+    "adservice": [
+      "adservice_cpu",
+      "adservice_error",
+      "adservice_latency",
+      "adservice_latency-50",
+      "adservice_latency-90"
+    ],
+    "carts": [
+      "carts_container-cpu-system-seconds-total",
+      "carts_container-cpu-usage-seconds-total",
+      "carts_container-cpu-user-seconds-total",
+      "carts_container-fs-reads-bytes-total",
+      "carts_container-fs-reads-total"
+    ],
+    "carts-db": [
+      "carts-db_container-cpu-system-seconds-total",
+      "carts-db_container-cpu-usage-seconds-total",
+      "carts-db_container-cpu-user-seconds-total",
+      "carts-db_container-fs-reads-bytes-total",
+      "carts-db_container-fs-reads-total"
+    ],
+    "cartservice": [
+      "cartservice_cpu",
+      "cartservice_error",
+      "cartservice_latency",
+      "cartservice_latency-50",
+      "cartservice_latency-90"
+    ],
+    "catalogue": [
+      "catalogue_container-cpu-system-seconds-total",
+      "catalogue_container-cpu-usage-seconds-total",
+      "catalogue_container-cpu-user-seconds-total",
+      "catalogue_container-fs-reads-bytes-total",
+      "catalogue_container-fs-reads-total"
+    ],
+    "catalogue-db": [
+      "catalogue-db_container-cpu-system-seconds-total",
+      "catalogue-db_container-cpu-usage-seconds-total",
+      "catalogue-db_container-cpu-user-seconds-total",
+      "catalogue-db_container-fs-reads-bytes-total",
+      "catalogue-db_container-fs-reads-total"
+    ],
+    "checkoutservice": [
+      "checkoutservice_cpu",
+      "checkoutservice_error",
+      "checkoutservice_latency",
+      "checkoutservice_latency-50",
+      "checkoutservice_latency-90"
+    ],
+    "currencyservice": [
+      "currencyservice_cpu",
+      "currencyservice_latency",
+      "currencyservice_latency-50",
+      "currencyservice_latency-90",
+      "currencyservice_load"
+    ],
+    "emailservice": [
+      "emailservice_cpu",
+      "emailservice_latency",
+      "emailservice_latency-50",
+      "emailservice_latency-90",
+      "emailservice_load"
+    ],
+    "front": [
+      "front_container-network-receive-bytes-total",
+      "front_container-network-receive-errors-total",
+      "front_container-network-receive-packets-dropped-total",
+      "front_container-network-receive-packets-total",
+      "front_container-network-transmit-bytes-total"
+    ],
+    "front-end": [
+      "front-end_container-cpu-system-seconds-total",
+      "front-end_container-cpu-usage-seconds-total",
+      "front-end_container-cpu-user-seconds-total",
+      "front-end_container-memory-cache",
+      "front-end_container-memory-failures-total"
+    ],
+    "frontend": [
+      "frontend_cpu",
+      "frontend_error",
+      "frontend_latency",
+      "frontend_latency-50",
+      "frontend_latency-90"
+    ],
+    "frontend-check": [
+      "frontend-check_mem"
+    ],
+    "frontend-external": [
+      "frontend-external_error",
+      "frontend-external_load",
+      "frontend-external_workload"
+    ],
+    "istio-init": [
+      "istio-init_container-memory-cache",
+      "istio-init_container-memory-mapped-file",
+      "istio-init_container-memory-max-usage-bytes",
+      "istio-init_container-memory-rss",
+      "istio-init_container-memory-swap"
+    ],
+    "main": [
+      "main_cpu",
+      "main_mem"
+    ],
+    "orders": [
+      "orders_container-cpu-system-seconds-total",
+      "orders_container-cpu-usage-seconds-total",
+      "orders_container-cpu-user-seconds-total",
+      "orders_container-fs-reads-bytes-total",
+      "orders_container-fs-reads-total"
+    ],
+    "orders-db": [
+      "orders-db_container-cpu-system-seconds-total",
+      "orders-db_container-cpu-usage-seconds-total",
+      "orders-db_container-cpu-user-seconds-total",
+      "orders-db_container-fs-reads-bytes-total",
+      "orders-db_container-fs-reads-total"
+    ],
+    "payment": [
+      "payment_container-cpu-system-seconds-total",
+      "payment_container-cpu-usage-seconds-total",
+      "payment_container-cpu-user-seconds-total",
+      "payment_container-fs-reads-bytes-total",
+      "payment_container-fs-reads-total"
+    ],
+    "paymentservice": [
+      "paymentservice_cpu",
+      "paymentservice_error",
+      "paymentservice_latency",
+      "paymentservice_latency-50",
+      "paymentservice_latency-90"
+    ],
+    "productcatalogservice": [
+      "productcatalogservice_cpu",
+      "productcatalogservice_error",
+      "productcatalogservice_latency",
+      "productcatalogservice_latency-50",
+      "productcatalogservice_latency-90"
+    ],
+    "queue": [
+      "queue_container-network-receive-bytes-total",
+      "queue_container-network-receive-errors-total",
+      "queue_container-network-receive-packets-dropped-total",
+      "queue_container-network-receive-packets-total",
+      "queue_container-network-transmit-bytes-total"
+    ],
+    "queue-master": [
+      "queue-master_container-cpu-system-seconds-total",
+      "queue-master_container-cpu-usage-seconds-total",
+      "queue-master_container-cpu-user-seconds-total",
+      "queue-master_container-fs-reads-bytes-total",
+      "queue-master_container-fs-reads-total"
+    ],
+    "rabbitmq": [
+      "rabbitmq_container-cpu-system-seconds-total",
+      "rabbitmq_container-cpu-usage-seconds-total",
+      "rabbitmq_container-cpu-user-seconds-total",
+      "rabbitmq_container-fs-reads-bytes-total",
+      "rabbitmq_container-fs-reads-total"
+    ],
+    "rabbitmq-exporter": [
+      "rabbitmq-exporter_container-cpu-system-seconds-total",
+      "rabbitmq-exporter_container-cpu-usage-seconds-total",
+      "rabbitmq-exporter_container-cpu-user-seconds-total",
+      "rabbitmq-exporter_container-memory-cache",
+      "rabbitmq-exporter_container-memory-failures-total"
+    ],
+    "recommendationservice": [
+      "recommendationservice_cpu",
+      "recommendationservice_latency",
+      "recommendationservice_latency-50",
+      "recommendationservice_latency-90",
+      "recommendationservice_load"
+    ],
+    "redis": [
+      "redis_cpu",
+      "redis_mem"
+    ],
+    "session": [
+      "session_container-network-receive-bytes-total",
+      "session_container-network-receive-errors-total",
+      "session_container-network-receive-packets-dropped-total",
+      "session_container-network-receive-packets-total",
+      "session_container-network-transmit-bytes-total"
+    ],
+    "session-db": [
+      "session-db_container-cpu-system-seconds-total",
+      "session-db_container-cpu-usage-seconds-total",
+      "session-db_container-cpu-user-seconds-total",
+      "session-db_container-fs-reads-bytes-total",
+      "session-db_container-fs-reads-total"
+    ],
+    "shipping": [
+      "shipping_container-cpu-system-seconds-total",
+      "shipping_container-cpu-usage-seconds-total",
+      "shipping_container-cpu-user-seconds-total",
+      "shipping_container-memory-cache",
+      "shipping_container-memory-failures-total"
+    ],
+    "shippingservice": [
+      "shippingservice_cpu",
+      "shippingservice_latency",
+      "shippingservice_latency-50",
+      "shippingservice_latency-90",
+      "shippingservice_load"
+    ],
+    "ts": [
+      "ts_container-network-receive-bytes-total",
+      "ts_container-network-receive-errors-total",
+      "ts_container-network-receive-packets-dropped-total",
+      "ts_container-network-receive-packets-total",
+      "ts_container-network-transmit-bytes-total"
+    ],
+    "ts-admin-basic-info-service": [
+      "ts-admin-basic-info-service_container-cpu-system-seconds-total",
+      "ts-admin-basic-info-service_container-cpu-usage-seconds-total",
+      "ts-admin-basic-info-service_container-cpu-user-seconds-total",
+      "ts-admin-basic-info-service_container-fs-reads-bytes-total",
+      "ts-admin-basic-info-service_container-fs-reads-total"
+    ],
+    "ts-admin-order-service": [
+      "ts-admin-order-service_container-cpu-system-seconds-total",
+      "ts-admin-order-service_container-cpu-usage-seconds-total",
+      "ts-admin-order-service_container-cpu-user-seconds-total",
+      "ts-admin-order-service_container-fs-reads-bytes-total",
+      "ts-admin-order-service_container-fs-reads-total"
+    ],
+    "ts-admin-route-service": [
+      "ts-admin-route-service_container-cpu-system-seconds-total",
+      "ts-admin-route-service_container-cpu-usage-seconds-total",
+      "ts-admin-route-service_container-cpu-user-seconds-total",
+      "ts-admin-route-service_container-fs-reads-bytes-total",
+      "ts-admin-route-service_container-fs-reads-total"
+    ],
+    "ts-admin-travel-service": [
+      "ts-admin-travel-service_container-cpu-system-seconds-total",
+      "ts-admin-travel-service_container-cpu-usage-seconds-total",
+      "ts-admin-travel-service_container-cpu-user-seconds-total",
+      "ts-admin-travel-service_container-fs-reads-bytes-total",
+      "ts-admin-travel-service_container-fs-reads-total"
+    ],
+    "ts-admin-user-service": [
+      "ts-admin-user-service_container-cpu-system-seconds-total",
+      "ts-admin-user-service_container-cpu-usage-seconds-total",
+      "ts-admin-user-service_container-cpu-user-seconds-total",
+      "ts-admin-user-service_container-fs-reads-bytes-total",
+      "ts-admin-user-service_container-fs-reads-total"
+    ],
+    "ts-assurance-mongo": [
+      "ts-assurance-mongo_container-cpu-system-seconds-total",
+      "ts-assurance-mongo_container-cpu-usage-seconds-total",
+      "ts-assurance-mongo_container-cpu-user-seconds-total",
+      "ts-assurance-mongo_container-fs-reads-bytes-total",
+      "ts-assurance-mongo_container-fs-reads-total"
+    ],
+    "ts-assurance-service": [
+      "ts-assurance-service_container-cpu-system-seconds-total",
+      "ts-assurance-service_container-cpu-usage-seconds-total",
+      "ts-assurance-service_container-cpu-user-seconds-total",
+      "ts-assurance-service_container-fs-reads-bytes-total",
+      "ts-assurance-service_container-fs-reads-total"
+    ],
+    "ts-auth-mongo": [
+      "ts-auth-mongo_container-cpu-system-seconds-total",
+      "ts-auth-mongo_container-cpu-usage-seconds-total",
+      "ts-auth-mongo_container-cpu-user-seconds-total",
+      "ts-auth-mongo_container-fs-reads-bytes-total",
+      "ts-auth-mongo_container-fs-reads-total"
+    ],
+    "ts-auth-service": [
+      "ts-auth-service_container-cpu-system-seconds-total",
+      "ts-auth-service_container-cpu-usage-seconds-total",
+      "ts-auth-service_container-cpu-user-seconds-total",
+      "ts-auth-service_container-fs-reads-bytes-total",
+      "ts-auth-service_container-fs-reads-total"
+    ],
+    "ts-avatar-service": [
+      "ts-avatar-service_container-cpu-system-seconds-total",
+      "ts-avatar-service_container-cpu-usage-seconds-total",
+      "ts-avatar-service_container-cpu-user-seconds-total",
+      "ts-avatar-service_container-fs-reads-bytes-total",
+      "ts-avatar-service_container-fs-reads-total"
+    ],
+    "ts-basic-service": [
+      "ts-basic-service_container-cpu-system-seconds-total",
+      "ts-basic-service_container-cpu-usage-seconds-total",
+      "ts-basic-service_container-cpu-user-seconds-total",
+      "ts-basic-service_container-fs-reads-bytes-total",
+      "ts-basic-service_container-fs-reads-total"
+    ],
+    "ts-cancel-service": [
+      "ts-cancel-service_container-cpu-system-seconds-total",
+      "ts-cancel-service_container-cpu-usage-seconds-total",
+      "ts-cancel-service_container-cpu-user-seconds-total",
+      "ts-cancel-service_container-fs-reads-bytes-total",
+      "ts-cancel-service_container-fs-reads-total"
+    ],
+    "ts-config-mongo": [
+      "ts-config-mongo_container-cpu-system-seconds-total",
+      "ts-config-mongo_container-cpu-usage-seconds-total",
+      "ts-config-mongo_container-cpu-user-seconds-total",
+      "ts-config-mongo_container-fs-reads-bytes-total",
+      "ts-config-mongo_container-fs-reads-total"
+    ],
+    "ts-config-service": [
+      "ts-config-service_container-cpu-system-seconds-total",
+      "ts-config-service_container-cpu-usage-seconds-total",
+      "ts-config-service_container-cpu-user-seconds-total",
+      "ts-config-service_container-fs-reads-bytes-total",
+      "ts-config-service_container-fs-reads-total"
+    ],
+    "ts-consign-mongo": [
+      "ts-consign-mongo_container-cpu-system-seconds-total",
+      "ts-consign-mongo_container-cpu-usage-seconds-total",
+      "ts-consign-mongo_container-cpu-user-seconds-total",
+      "ts-consign-mongo_container-fs-reads-bytes-total",
+      "ts-consign-mongo_container-fs-reads-total"
+    ],
+    "ts-consign-price-mongo": [
+      "ts-consign-price-mongo_container-cpu-system-seconds-total",
+      "ts-consign-price-mongo_container-cpu-usage-seconds-total",
+      "ts-consign-price-mongo_container-cpu-user-seconds-total",
+      "ts-consign-price-mongo_container-fs-reads-bytes-total",
+      "ts-consign-price-mongo_container-fs-reads-total"
+    ],
+    "ts-consign-price-service": [
+      "ts-consign-price-service_container-cpu-system-seconds-total",
+      "ts-consign-price-service_container-cpu-usage-seconds-total",
+      "ts-consign-price-service_container-cpu-user-seconds-total",
+      "ts-consign-price-service_container-fs-reads-bytes-total",
+      "ts-consign-price-service_container-fs-reads-total"
+    ],
+    "ts-consign-service": [
+      "ts-consign-service_container-cpu-system-seconds-total",
+      "ts-consign-service_container-cpu-usage-seconds-total",
+      "ts-consign-service_container-cpu-user-seconds-total",
+      "ts-consign-service_container-fs-reads-bytes-total",
+      "ts-consign-service_container-fs-reads-total"
+    ],
+    "ts-contacts-mongo": [
+      "ts-contacts-mongo_container-cpu-system-seconds-total",
+      "ts-contacts-mongo_container-cpu-usage-seconds-total",
+      "ts-contacts-mongo_container-cpu-user-seconds-total",
+      "ts-contacts-mongo_container-fs-reads-bytes-total",
+      "ts-contacts-mongo_container-fs-reads-total"
+    ],
+    "ts-contacts-service": [
+      "ts-contacts-service_container-cpu-system-seconds-total",
+      "ts-contacts-service_container-cpu-usage-seconds-total",
+      "ts-contacts-service_container-cpu-user-seconds-total",
+      "ts-contacts-service_container-fs-reads-bytes-total",
+      "ts-contacts-service_container-fs-reads-total"
+    ],
+    "ts-execute-service": [
+      "ts-execute-service_container-cpu-system-seconds-total",
+      "ts-execute-service_container-cpu-usage-seconds-total",
+      "ts-execute-service_container-cpu-user-seconds-total",
+      "ts-execute-service_container-fs-reads-bytes-total",
+      "ts-execute-service_container-fs-reads-total"
+    ],
+    "ts-food-map-mongo": [
+      "ts-food-map-mongo_container-cpu-system-seconds-total",
+      "ts-food-map-mongo_container-cpu-usage-seconds-total",
+      "ts-food-map-mongo_container-cpu-user-seconds-total",
+      "ts-food-map-mongo_container-fs-reads-bytes-total",
+      "ts-food-map-mongo_container-fs-reads-total"
+    ],
+    "ts-food-map-service": [
+      "ts-food-map-service_container-cpu-system-seconds-total",
+      "ts-food-map-service_container-cpu-usage-seconds-total",
+      "ts-food-map-service_container-cpu-user-seconds-total",
+      "ts-food-map-service_container-fs-reads-bytes-total",
+      "ts-food-map-service_container-fs-reads-total"
+    ],
+    "ts-food-mongo": [
+      "ts-food-mongo_container-cpu-system-seconds-total",
+      "ts-food-mongo_container-cpu-usage-seconds-total",
+      "ts-food-mongo_container-cpu-user-seconds-total",
+      "ts-food-mongo_container-fs-reads-bytes-total",
+      "ts-food-mongo_container-fs-reads-total"
+    ],
+    "ts-food-service": [
+      "ts-food-service_container-cpu-system-seconds-total",
+      "ts-food-service_container-cpu-usage-seconds-total",
+      "ts-food-service_container-cpu-user-seconds-total",
+      "ts-food-service_container-fs-reads-bytes-total",
+      "ts-food-service_container-fs-reads-total"
+    ],
+    "ts-inside-payment-mongo": [
+      "ts-inside-payment-mongo_container-cpu-system-seconds-total",
+      "ts-inside-payment-mongo_container-cpu-usage-seconds-total",
+      "ts-inside-payment-mongo_container-cpu-user-seconds-total",
+      "ts-inside-payment-mongo_container-fs-reads-bytes-total",
+      "ts-inside-payment-mongo_container-fs-reads-total"
+    ],
+    "ts-inside-payment-service": [
+      "ts-inside-payment-service_container-cpu-system-seconds-total",
+      "ts-inside-payment-service_container-cpu-usage-seconds-total",
+      "ts-inside-payment-service_container-cpu-user-seconds-total",
+      "ts-inside-payment-service_container-fs-reads-bytes-total",
+      "ts-inside-payment-service_container-fs-reads-total"
+    ],
+    "ts-news-service": [
+      "ts-news-service_container-cpu-system-seconds-total",
+      "ts-news-service_container-cpu-usage-seconds-total",
+      "ts-news-service_container-cpu-user-seconds-total",
+      "ts-news-service_container-memory-cache",
+      "ts-news-service_container-memory-failures-total"
+    ],
+    "ts-notification-service": [
+      "ts-notification-service_container-cpu-system-seconds-total",
+      "ts-notification-service_container-cpu-usage-seconds-total",
+      "ts-notification-service_container-cpu-user-seconds-total",
+      "ts-notification-service_container-fs-reads-bytes-total",
+      "ts-notification-service_container-fs-reads-total"
+    ],
+    "ts-order-mongo": [
+      "ts-order-mongo_container-cpu-system-seconds-total",
+      "ts-order-mongo_container-cpu-usage-seconds-total",
+      "ts-order-mongo_container-cpu-user-seconds-total",
+      "ts-order-mongo_container-fs-reads-bytes-total",
+      "ts-order-mongo_container-fs-reads-total"
+    ],
+    "ts-order-other-mongo": [
+      "ts-order-other-mongo_container-cpu-system-seconds-total",
+      "ts-order-other-mongo_container-cpu-usage-seconds-total",
+      "ts-order-other-mongo_container-cpu-user-seconds-total",
+      "ts-order-other-mongo_container-fs-reads-bytes-total",
+      "ts-order-other-mongo_container-fs-reads-total"
+    ],
+    "ts-order-other-service": [
+      "ts-order-other-service_container-cpu-system-seconds-total",
+      "ts-order-other-service_container-cpu-usage-seconds-total",
+      "ts-order-other-service_container-cpu-user-seconds-total",
+      "ts-order-other-service_container-fs-reads-bytes-total",
+      "ts-order-other-service_container-fs-reads-total"
+    ],
+    "ts-order-service": [
+      "ts-order-service_container-cpu-system-seconds-total",
+      "ts-order-service_container-cpu-usage-seconds-total",
+      "ts-order-service_container-cpu-user-seconds-total",
+      "ts-order-service_container-fs-reads-bytes-total",
+      "ts-order-service_container-fs-reads-total"
+    ],
+    "ts-payment-mongo": [
+      "ts-payment-mongo_container-cpu-system-seconds-total",
+      "ts-payment-mongo_container-cpu-usage-seconds-total",
+      "ts-payment-mongo_container-cpu-user-seconds-total",
+      "ts-payment-mongo_container-fs-reads-bytes-total",
+      "ts-payment-mongo_container-fs-reads-total"
+    ],
+    "ts-payment-service": [
+      "ts-payment-service_container-cpu-system-seconds-total",
+      "ts-payment-service_container-cpu-usage-seconds-total",
+      "ts-payment-service_container-cpu-user-seconds-total",
+      "ts-payment-service_container-fs-reads-bytes-total",
+      "ts-payment-service_container-fs-reads-total"
+    ],
+    "ts-preserve-other-service": [
+      "ts-preserve-other-service_container-cpu-system-seconds-total",
+      "ts-preserve-other-service_container-cpu-usage-seconds-total",
+      "ts-preserve-other-service_container-cpu-user-seconds-total",
+      "ts-preserve-other-service_container-fs-reads-bytes-total",
+      "ts-preserve-other-service_container-fs-reads-total"
+    ],
+    "ts-preserve-service": [
+      "ts-preserve-service_container-cpu-system-seconds-total",
+      "ts-preserve-service_container-cpu-usage-seconds-total",
+      "ts-preserve-service_container-cpu-user-seconds-total",
+      "ts-preserve-service_container-fs-reads-bytes-total",
+      "ts-preserve-service_container-fs-reads-total"
+    ],
+    "ts-price-mongo": [
+      "ts-price-mongo_container-cpu-system-seconds-total",
+      "ts-price-mongo_container-cpu-usage-seconds-total",
+      "ts-price-mongo_container-cpu-user-seconds-total",
+      "ts-price-mongo_container-fs-reads-bytes-total",
+      "ts-price-mongo_container-fs-reads-total"
+    ],
+    "ts-price-service": [
+      "ts-price-service_container-cpu-system-seconds-total",
+      "ts-price-service_container-cpu-usage-seconds-total",
+      "ts-price-service_container-cpu-user-seconds-total",
+      "ts-price-service_container-fs-reads-bytes-total",
+      "ts-price-service_container-fs-reads-total"
+    ],
+    "ts-rebook-service": [
+      "ts-rebook-service_container-cpu-system-seconds-total",
+      "ts-rebook-service_container-cpu-usage-seconds-total",
+      "ts-rebook-service_container-cpu-user-seconds-total",
+      "ts-rebook-service_container-fs-reads-bytes-total",
+      "ts-rebook-service_container-fs-reads-total"
+    ],
+    "ts-route-mongo": [
+      "ts-route-mongo_container-cpu-system-seconds-total",
+      "ts-route-mongo_container-cpu-usage-seconds-total",
+      "ts-route-mongo_container-cpu-user-seconds-total",
+      "ts-route-mongo_container-fs-reads-bytes-total",
+      "ts-route-mongo_container-fs-reads-total"
+    ],
+    "ts-route-plan-service": [
+      "ts-route-plan-service_container-cpu-system-seconds-total",
+      "ts-route-plan-service_container-cpu-usage-seconds-total",
+      "ts-route-plan-service_container-cpu-user-seconds-total",
+      "ts-route-plan-service_container-fs-reads-bytes-total",
+      "ts-route-plan-service_container-fs-reads-total"
+    ],
+    "ts-route-service": [
+      "ts-route-service_container-cpu-system-seconds-total",
+      "ts-route-service_container-cpu-usage-seconds-total",
+      "ts-route-service_container-cpu-user-seconds-total",
+      "ts-route-service_container-fs-reads-bytes-total",
+      "ts-route-service_container-fs-reads-total"
+    ],
+    "ts-seat-service": [
+      "ts-seat-service_container-cpu-system-seconds-total",
+      "ts-seat-service_container-cpu-usage-seconds-total",
+      "ts-seat-service_container-cpu-user-seconds-total",
+      "ts-seat-service_container-fs-reads-bytes-total",
+      "ts-seat-service_container-fs-reads-total"
+    ],
+    "ts-security-mongo": [
+      "ts-security-mongo_container-cpu-system-seconds-total",
+      "ts-security-mongo_container-cpu-usage-seconds-total",
+      "ts-security-mongo_container-cpu-user-seconds-total",
+      "ts-security-mongo_container-fs-reads-bytes-total",
+      "ts-security-mongo_container-fs-reads-total"
+    ],
+    "ts-security-service": [
+      "ts-security-service_container-cpu-system-seconds-total",
+      "ts-security-service_container-cpu-usage-seconds-total",
+      "ts-security-service_container-cpu-user-seconds-total",
+      "ts-security-service_container-fs-reads-bytes-total",
+      "ts-security-service_container-fs-reads-total"
+    ],
+    "ts-station-mongo": [
+      "ts-station-mongo_container-cpu-system-seconds-total",
+      "ts-station-mongo_container-cpu-usage-seconds-total",
+      "ts-station-mongo_container-cpu-user-seconds-total",
+      "ts-station-mongo_container-fs-reads-bytes-total",
+      "ts-station-mongo_container-fs-reads-total"
+    ],
+    "ts-station-service": [
+      "ts-station-service_container-cpu-system-seconds-total",
+      "ts-station-service_container-cpu-usage-seconds-total",
+      "ts-station-service_container-cpu-user-seconds-total",
+      "ts-station-service_container-fs-reads-bytes-total",
+      "ts-station-service_container-fs-reads-total"
+    ],
+    "ts-ticket-office-mongo": [
+      "ts-ticket-office-mongo_container-cpu-system-seconds-total",
+      "ts-ticket-office-mongo_container-cpu-usage-seconds-total",
+      "ts-ticket-office-mongo_container-cpu-user-seconds-total",
+      "ts-ticket-office-mongo_container-fs-reads-bytes-total",
+      "ts-ticket-office-mongo_container-fs-reads-total"
+    ],
+    "ts-ticket-office-service": [
+      "ts-ticket-office-service_container-cpu-system-seconds-total",
+      "ts-ticket-office-service_container-cpu-usage-seconds-total",
+      "ts-ticket-office-service_container-cpu-user-seconds-total",
+      "ts-ticket-office-service_container-fs-reads-bytes-total",
+      "ts-ticket-office-service_container-fs-reads-total"
+    ],
+    "ts-ticketinfo-service": [
+      "ts-ticketinfo-service_container-cpu-system-seconds-total",
+      "ts-ticketinfo-service_container-cpu-usage-seconds-total",
+      "ts-ticketinfo-service_container-cpu-user-seconds-total",
+      "ts-ticketinfo-service_container-fs-reads-bytes-total",
+      "ts-ticketinfo-service_container-fs-reads-total"
+    ],
+    "ts-train-mongo": [
+      "ts-train-mongo_container-cpu-system-seconds-total",
+      "ts-train-mongo_container-cpu-usage-seconds-total",
+      "ts-train-mongo_container-cpu-user-seconds-total",
+      "ts-train-mongo_container-fs-reads-bytes-total",
+      "ts-train-mongo_container-fs-reads-total"
+    ],
+    "ts-train-service": [
+      "ts-train-service_container-cpu-system-seconds-total",
+      "ts-train-service_container-cpu-usage-seconds-total",
+      "ts-train-service_container-cpu-user-seconds-total",
+      "ts-train-service_container-fs-reads-bytes-total",
+      "ts-train-service_container-fs-reads-total"
+    ],
+    "ts-travel-mongo": [
+      "ts-travel-mongo_container-cpu-system-seconds-total",
+      "ts-travel-mongo_container-cpu-usage-seconds-total",
+      "ts-travel-mongo_container-cpu-user-seconds-total",
+      "ts-travel-mongo_container-fs-reads-bytes-total",
+      "ts-travel-mongo_container-fs-reads-total"
+    ],
+    "ts-travel-plan-service": [
+      "ts-travel-plan-service_container-cpu-system-seconds-total",
+      "ts-travel-plan-service_container-cpu-usage-seconds-total",
+      "ts-travel-plan-service_container-cpu-user-seconds-total",
+      "ts-travel-plan-service_container-fs-reads-bytes-total",
+      "ts-travel-plan-service_container-fs-reads-total"
+    ],
+    "ts-travel-service": [
+      "ts-travel-service_container-cpu-system-seconds-total",
+      "ts-travel-service_container-cpu-usage-seconds-total",
+      "ts-travel-service_container-cpu-user-seconds-total",
+      "ts-travel-service_container-fs-reads-bytes-total",
+      "ts-travel-service_container-fs-reads-total"
+    ],
+    "ts-travel2-mongo": [
+      "ts-travel2-mongo_container-cpu-system-seconds-total",
+      "ts-travel2-mongo_container-cpu-usage-seconds-total",
+      "ts-travel2-mongo_container-cpu-user-seconds-total",
+      "ts-travel2-mongo_container-fs-reads-bytes-total",
+      "ts-travel2-mongo_container-fs-reads-total"
+    ],
+    "ts-travel2-service": [
+      "ts-travel2-service_container-cpu-system-seconds-total",
+      "ts-travel2-service_container-cpu-usage-seconds-total",
+      "ts-travel2-service_container-cpu-user-seconds-total",
+      "ts-travel2-service_container-fs-reads-bytes-total",
+      "ts-travel2-service_container-fs-reads-total"
+    ],
+    "ts-ui-dashboard": [
+      "ts-ui-dashboard_container-cpu-system-seconds-total",
+      "ts-ui-dashboard_container-cpu-usage-seconds-total",
+      "ts-ui-dashboard_container-cpu-user-seconds-total",
+      "ts-ui-dashboard_container-fs-reads-bytes-total",
+      "ts-ui-dashboard_container-fs-reads-total"
+    ],
+    "ts-user-mongo": [
+      "ts-user-mongo_container-cpu-system-seconds-total",
+      "ts-user-mongo_container-cpu-usage-seconds-total",
+      "ts-user-mongo_container-cpu-user-seconds-total",
+      "ts-user-mongo_container-fs-reads-bytes-total",
+      "ts-user-mongo_container-fs-reads-total"
+    ],
+    "ts-user-service": [
+      "ts-user-service_container-cpu-system-seconds-total",
+      "ts-user-service_container-cpu-usage-seconds-total",
+      "ts-user-service_container-cpu-user-seconds-total",
+      "ts-user-service_container-fs-reads-bytes-total",
+      "ts-user-service_container-fs-reads-total"
+    ],
+    "ts-verification-code-service": [
+      "ts-verification-code-service_container-cpu-system-seconds-total",
+      "ts-verification-code-service_container-cpu-usage-seconds-total",
+      "ts-verification-code-service_container-cpu-user-seconds-total",
+      "ts-verification-code-service_container-fs-reads-bytes-total",
+      "ts-verification-code-service_container-fs-reads-total"
+    ],
+    "ts-voucher-mysql": [
+      "ts-voucher-mysql_container-cpu-system-seconds-total",
+      "ts-voucher-mysql_container-cpu-usage-seconds-total",
+      "ts-voucher-mysql_container-cpu-user-seconds-total",
+      "ts-voucher-mysql_container-fs-reads-bytes-total",
+      "ts-voucher-mysql_container-fs-reads-total"
+    ],
+    "ts-voucher-service": [
+      "ts-voucher-service_container-cpu-system-seconds-total",
+      "ts-voucher-service_container-cpu-usage-seconds-total",
+      "ts-voucher-service_container-cpu-user-seconds-total",
+      "ts-voucher-service_container-fs-reads-bytes-total",
+      "ts-voucher-service_container-fs-reads-total"
+    ],
+    "user": [
+      "user_container-cpu-system-seconds-total",
+      "user_container-cpu-usage-seconds-total",
+      "user_container-cpu-user-seconds-total",
+      "user_container-fs-reads-bytes-total",
+      "user_container-fs-reads-total"
+    ],
+    "user-db": [
+      "user-db_container-cpu-system-seconds-total",
+      "user-db_container-cpu-usage-seconds-total",
+      "user-db_container-cpu-user-seconds-total",
+      "user-db_container-fs-reads-bytes-total",
+      "user-db_container-fs-reads-total"
+    ]
+  },
+  "systems": {
+    "OnlineBoutique": {
+      "total_cases": 125,
+      "num_services": 20,
+      "services": [
+        "InboundPassthroughClusterIpv4",
+        "PassthroughCluster",
+        "adservice",
+        "carts",
+        "cartservice",
+        "catalogue",
+        "checkoutservice",
+        "currencyservice",
+        "emailservice",
+        "front-end",
+        "frontend",
+        "frontend-check",
+        "frontend-external",
+        "main",
+        "orders",
+        "paymentservice",
+        "productcatalogservice",
+        "recommendationservice",
+        "redis",
+        "shippingservice"
+      ],
+      "fault_distribution": {
+        "cpu": 25,
+        "delay": 25,
+        "disk": 25,
+        "loss": 25,
+        "mem": 25
+      },
+      "metric_counts_per_service": {
+        "InboundPassthroughClusterIpv4": 2,
+        "PassthroughCluster": 2,
+        "adservice": 8,
+        "carts": 2,
+        "cartservice": 8,
+        "catalogue": 2,
+        "checkoutservice": 8,
+        "currencyservice": 7,
+        "emailservice": 7,
+        "front-end": 1,
+        "frontend": 8,
+        "frontend-check": 1,
+        "frontend-external": 3,
+        "main": 2,
+        "orders": 2,
+        "paymentservice": 8,
+        "productcatalogservice": 8,
+        "recommendationservice": 7,
+        "redis": 2,
+        "shippingservice": 7
+      }
+    },
+    "SockShop": {
+      "total_cases": 125,
+      "num_services": 42,
+      "services": [
+        "10-192-15-195-9100",
+        "10-192-15-196-9100",
+        "10-192-15-197-9100",
+        "192-168-10-83-9100",
+        "192-168-15-8-9100",
+        "192-168-18-57-9100",
+        "192-168-2-165-9100",
+        "192-168-22-131-9100",
+        "192-168-26-82-9100",
+        "192-168-27-60-9100",
+        "192-168-33-0-9100",
+        "192-168-33-39-9100",
+        "192-168-37-154-9100",
+        "192-168-53-168-9100",
+        "192-168-56-14-9100",
+        "192-168-60-79-9100",
+        "192-168-61-95-9100",
+        "192-168-64-231-9100",
+        "192-168-76-116-9100",
+        "192-168-77-58-9100",
+        "192-168-85-112-9100",
+        "192-168-90-135-9100",
+        "192-168-95-91-9100",
+        "carts",
+        "carts-db",
+        "catalogue",
+        "catalogue-db",
+        "front",
+        "front-end",
+        "istio-init",
+        "orders",
+        "orders-db",
+        "payment",
+        "queue",
+        "queue-master",
+        "rabbitmq",
+        "rabbitmq-exporter",
+        "session",
+        "session-db",
+        "shipping",
+        "user",
+        "user-db"
+      ],
+      "fault_distribution": {
+        "cpu": 25,
+        "delay": 25,
+        "disk": 25,
+        "loss": 25,
+        "mem": 25
+      },
+      "metric_counts_per_service": {
+        "10-192-15-195-9100": 13,
+        "10-192-15-196-9100": 13,
+        "10-192-15-197-9100": 13,
+        "192-168-10-83-9100": 13,
+        "192-168-15-8-9100": 13,
+        "192-168-18-57-9100": 13,
+        "192-168-2-165-9100": 13,
+        "192-168-22-131-9100": 13,
+        "192-168-26-82-9100": 13,
+        "192-168-27-60-9100": 13,
+        "192-168-33-0-9100": 13,
+        "192-168-33-39-9100": 13,
+        "192-168-37-154-9100": 13,
+        "192-168-53-168-9100": 13,
+        "192-168-56-14-9100": 13,
+        "192-168-60-79-9100": 13,
+        "192-168-61-95-9100": 13,
+        "192-168-64-231-9100": 13,
+        "192-168-76-116-9100": 13,
+        "192-168-77-58-9100": 13,
+        "192-168-85-112-9100": 13,
+        "192-168-90-135-9100": 13,
+        "192-168-95-91-9100": 13,
+        "carts": 35,
+        "carts-db": 17,
+        "catalogue": 35,
+        "catalogue-db": 16,
+        "front": 8,
+        "front-end": 23,
+        "istio-init": 7,
+        "orders": 35,
+        "orders-db": 17,
+        "payment": 35,
+        "queue": 8,
+        "queue-master": 27,
+        "rabbitmq": 24,
+        "rabbitmq-exporter": 12,
+        "session": 8,
+        "session-db": 16,
+        "shipping": 31,
+        "user": 35,
+        "user-db": 17
+      }
+    },
+    "TrainTicket": {
+      "total_cases": 125,
+      "num_services": 83,
+      "services": [
+        "10-192-15-219-9100",
+        "10-192-15-221-9100",
+        "10-192-15-222-9100",
+        "10-192-15-223-9100",
+        "10-192-15-224-9100",
+        "10-192-15-225-9100",
+        "10-192-15-226-9100",
+        "192-168-25-221-9100",
+        "192-168-29-237-9100",
+        "192-168-31-243-9100",
+        "192-168-34-36-9100",
+        "192-168-45-158-9100",
+        "192-168-51-251-9100",
+        "192-168-57-5-9100",
+        "192-168-76-138-9100",
+        "192-168-80-141-9100",
+        "192-168-90-92-9100",
+        "192-168-93-129-9100",
+        "ts",
+        "ts-admin-basic-info-service",
+        "ts-admin-order-service",
+        "ts-admin-route-service",
+        "ts-admin-travel-service",
+        "ts-admin-user-service",
+        "ts-assurance-mongo",
+        "ts-assurance-service",
+        "ts-auth-mongo",
+        "ts-auth-service",
+        "ts-avatar-service",
+        "ts-basic-service",
+        "ts-cancel-service",
+        "ts-config-mongo",
+        "ts-config-service",
+        "ts-consign-mongo",
+        "ts-consign-price-mongo",
+        "ts-consign-price-service",
+        "ts-consign-service",
+        "ts-contacts-mongo",
+        "ts-contacts-service",
+        "ts-execute-service",
+        "ts-food-map-mongo",
+        "ts-food-map-service",
+        "ts-food-mongo",
+        "ts-food-service",
+        "ts-inside-payment-mongo",
+        "ts-inside-payment-service",
+        "ts-news-service",
+        "ts-notification-service",
+        "ts-order-mongo",
+        "ts-order-other-mongo",
+        "ts-order-other-service",
+        "ts-order-service",
+        "ts-payment-mongo",
+        "ts-payment-service",
+        "ts-preserve-other-service",
+        "ts-preserve-service",
+        "ts-price-mongo",
+        "ts-price-service",
+        "ts-rebook-service",
+        "ts-route-mongo",
+        "ts-route-plan-service",
+        "ts-route-service",
+        "ts-seat-service",
+        "ts-security-mongo",
+        "ts-security-service",
+        "ts-station-mongo",
+        "ts-station-service",
+        "ts-ticket-office-mongo",
+        "ts-ticket-office-service",
+        "ts-ticketinfo-service",
+        "ts-train-mongo",
+        "ts-train-service",
+        "ts-travel-mongo",
+        "ts-travel-plan-service",
+        "ts-travel-service",
+        "ts-travel2-mongo",
+        "ts-travel2-service",
+        "ts-ui-dashboard",
+        "ts-user-mongo",
+        "ts-user-service",
+        "ts-verification-code-service",
+        "ts-voucher-mysql",
+        "ts-voucher-service"
+      ],
+      "fault_distribution": {
+        "cpu": 25,
+        "delay": 25,
+        "disk": 25,
+        "loss": 25,
+        "mem": 25
+      },
+      "metric_counts_per_service": {
+        "10-192-15-219-9100": 13,
+        "10-192-15-221-9100": 13,
+        "10-192-15-222-9100": 13,
+        "10-192-15-223-9100": 13,
+        "10-192-15-224-9100": 13,
+        "10-192-15-225-9100": 13,
+        "10-192-15-226-9100": 13,
+        "192-168-25-221-9100": 13,
+        "192-168-29-237-9100": 13,
+        "192-168-31-243-9100": 13,
+        "192-168-34-36-9100": 13,
+        "192-168-45-158-9100": 13,
+        "192-168-51-251-9100": 13,
+        "192-168-57-5-9100": 13,
+        "192-168-76-138-9100": 13,
+        "192-168-80-141-9100": 13,
+        "192-168-90-92-9100": 13,
+        "192-168-93-129-9100": 13,
+        "ts": 8,
+        "ts-admin-basic-info-service": 27,
+        "ts-admin-order-service": 17,
+        "ts-admin-route-service": 17,
+        "ts-admin-travel-service": 27,
+        "ts-admin-user-service": 17,
+        "ts-assurance-mongo": 16,
+        "ts-assurance-service": 27,
+        "ts-auth-mongo": 16,
+        "ts-auth-service": 27,
+        "ts-avatar-service": 17,
+        "ts-basic-service": 27,
+        "ts-cancel-service": 17,
+        "ts-config-mongo": 16,
+        "ts-config-service": 27,
+        "ts-consign-mongo": 16,
+        "ts-consign-price-mongo": 16,
+        "ts-consign-price-service": 26,
+        "ts-consign-service": 27,
+        "ts-contacts-mongo": 16,
+        "ts-contacts-service": 27,
+        "ts-execute-service": 17,
+        "ts-food-map-mongo": 16,
+        "ts-food-map-service": 27,
+        "ts-food-mongo": 16,
+        "ts-food-service": 27,
+        "ts-inside-payment-mongo": 16,
+        "ts-inside-payment-service": 27,
+        "ts-news-service": 13,
+        "ts-notification-service": 26,
+        "ts-order-mongo": 16,
+        "ts-order-other-mongo": 16,
+        "ts-order-other-service": 27,
+        "ts-order-service": 27,
+        "ts-payment-mongo": 16,
+        "ts-payment-service": 26,
+        "ts-preserve-other-service": 27,
+        "ts-preserve-service": 27,
+        "ts-price-mongo": 16,
+        "ts-price-service": 27,
+        "ts-rebook-service": 17,
+        "ts-route-mongo": 16,
+        "ts-route-plan-service": 17,
+        "ts-route-service": 27,
+        "ts-seat-service": 27,
+        "ts-security-mongo": 16,
+        "ts-security-service": 27,
+        "ts-station-mongo": 16,
+        "ts-station-service": 27,
+        "ts-ticket-office-mongo": 16,
+        "ts-ticket-office-service": 17,
+        "ts-ticketinfo-service": 27,
+        "ts-train-mongo": 16,
+        "ts-train-service": 27,
+        "ts-travel-mongo": 16,
+        "ts-travel-plan-service": 17,
+        "ts-travel-service": 27,
+        "ts-travel2-mongo": 16,
+        "ts-travel2-service": 27,
+        "ts-ui-dashboard": 27,
+        "ts-user-mongo": 16,
+        "ts-user-service": 27,
+        "ts-verification-code-service": 17,
+        "ts-voucher-mysql": 16,
+        "ts-voucher-service": 17
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# Configuration for RCAEval RE1-OB Dataset
+dataset_name: "RE1-OB"
+raw_dir: "data/raw/rcaeval"
+dataset_path: "data/raw/rcaeval/RE1-OB"
+system: "OnlineBoutique"
+
+# Pre-fault calibration window & timing parameters
+pre_fault_buffer_sec: 10
+window_size: 60
+post_fault_window_sec: 300
+
+# Benchmark metadata
+total_expected_cases: 125
+services:
+  - "adservice"
+  - "cartservice"
+  - "checkoutservice"
+  - "currencyservice"
+  - "emailservice"
+  - "frontend"
+  - "paymentservice"
+  - "productcatalogservice"
+  - "recommendationservice"
+  - "shippingservice"
+
+# Random seeds for reproducibility
+seeds:
+  - 42
+  - 1024
+  - 2025
+  - 2026
+  - 7777
+
+# Evaluation metrics
+metrics:
+  - "AC@1"
+  - "AC@3"
+  - "AC@5"
+  - "Avg@5"
+  - "MRR"
+  - "Chance@5"
+  - "Lift@5"
+  - "runtime_ms"

@@ -1,0 +1,51 @@
+Metadata-Version: 2.4
+Name: constrained-xaiops
+Version: 0.1.0
+Summary: Data-Quality-Aware, Explainable AIOps for Constrained Cloud Environments
+Author: Constrained-xAIOps Core Team
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: numpy<2.0.0,>=1.26.0
+Requires-Dist: pandas<2.3.0,>=2.1.0
+Requires-Dist: pyarrow>=15.0.0
+Requires-Dist: scipy>=1.11.0
+Requires-Dist: scikit-learn<1.6.0,>=1.4.0
+Requires-Dist: shap>=0.45.0
+Requires-Dist: pydantic>=2.6.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: fastapi>=0.110.0
+Requires-Dist: uvicorn>=0.28.0
+Requires-Dist: streamlit>=1.32.0
+Requires-Dist: matplotlib>=3.8.0
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: psutil>=5.9.8
+Requires-Dist: pytest>=8.1.0
+Requires-Dist: pytest-cov>=5.0.0
+Requires-Dist: requests>=2.31.0
+
+# Constrained-xAIOps
+**Data-Quality-Aware, Explainable AIOps for Constrained Cloud Environments**
+
+## Project Overview
+Constrained-xAIOps addresses microservice root cause analysis (RCA) and anomaly detection under realistic constrained cloud conditions where telemetry experiences missingness, sensor dropouts, noise, and irregular sampling.
+
+## Repository Layout
+- `configs/`: Pipeline, dataset, and experiment configurations
+- `data/`: Raw benchmarks, interim aligned data, and processed datasets
+- `datasets/`: Dataset loaders, download scripts, and schema registries
+- `src/`: Core architectural packages:
+  - `ingestion/`: Deduplication, irregular timestamp alignment, telemetry loading
+  - `quality/`: Telemetry quality profiling and trust scoring
+  - `missingness/`: Missingness classification (MCAR/MAR/MNAR) and masking
+  - `preprocessing/`: Pre-fault baseline normalization and filtering
+  - `detection/`: Microservice anomaly detection
+  - `abstention/`: Selective classification and abstention policies
+  - `correlation/`: Microservice metric graph and dependency correlation
+  - `rca/`: Root cause localization baselines (BARO, $\epsilon$-Diagnosis) and algorithms
+  - `explainability/`: Feature attribution and explanation generators
+  - `feedback/`: Human-in-the-loop operator feedback loops
+  - `evaluation/`: Benchmark metrics (AC@k, Avg@5, MRR, Lift@5)
+  - `dashboard/`: Interactive telemetry and RCA operator dashboard
+- `artifacts/`: Execution metrics, logs, figures, and models
+- `scripts/`: Environment verification and utility scripts
+- `tests/`: Unit, integration, and regression tests

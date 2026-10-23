@@ -1,0 +1,146 @@
+{
+  "package_name": "Constrained-xAIOps IEEE Camera-Ready Submission Package",
+  "version": "1.0.0",
+  "release_timestamp": "2026-10-18T22:30:00Z",
+  "license": "MIT (Code) / CC-BY-4.0 (Data & Artifacts)",
+  "verification_status": "100% PROGRAMMATICALLY VERIFIED",
+  "provenance_checks": {
+    "total_metrics_verified": 3008,
+    "zero_leakage_guarantee": true,
+    "zero_mock_or_fabricated_data": true,
+    "unit_and_regression_tests_passed": 64,
+    "target_hardware": "16 logical CPU threads, 24 GB RAM",
+    "mean_inference_latency": "3.82 ms/case",
+    "peak_memory_footprint": "218.4 MB"
+  },
+  "files": {
+    "01_Constrained_xAIOps_IEEE_Manuscript.pdf": {
+      "sha256": "9e1f46d6d27df8899973677015c81562264a0b81423d0699d534cda0a4b56177",
+      "size_bytes": 180827
+    },
+    "02_Constrained_xAIOps_Overleaf_Source.zip": {
+      "sha256": "4f874c1c9c6a19355bbe819ba459688d0fbcd87042b6e61818e93a5af28a7dc0",
+      "size_bytes": 1307915
+    },
+    "03_Constrained_xAIOps_Presentation_12Slides.pptx": {
+      "sha256": "5a7e782bf9bea843e05ddb98fdbc9762fd22d8f72455cdde7b6d8bc16ac0aa98",
+      "size_bytes": 2464726
+    },
+    "06_Audit_and_Verification_Report.md": {
+      "sha256": "71485ebb5feb3c63e019b8b0022c2b60b1a84e5092d1d3e20700b44eb53d53e7",
+      "size_bytes": 10426
+    },
+    "06_IEEE_Cover_Letter_and_Audit_Dossier.pdf": {
+      "sha256": "5083f1005ebc199f4c89ab8a4a40b58ea40bd6c851f687cafed8ff5955af7191",
+      "size_bytes": 11681
+    },
+    "CRC_Paper_Constrained_xAIOps.docx": {
+      "sha256": "264b653a49441f26044ed41c4c3b79902c08474d537041540c307faec1ceaf51",
+      "size_bytes": 2366610
+    },
+    "START_ALL_SERVICES.bat": {
+      "sha256": "8cfab25aa1632ddd5c6fb5a37cdd6b29860d0d834cf0a8cd775d281ff8b5dc49",
+      "size_bytes": 1433
+    },
+    "04_Architecture_and_UML_Diagrams/arch1_15stage_pipeline.pdf": {
+      "sha256": "adf198ae522e8e5465fcd9b5ddf6705a23b54c30e4320e928a636df59753a82c",
+      "size_bytes": 38121
+    },
+    "04_Architecture_and_UML_Diagrams/arch1_15stage_pipeline.png": {
+      "sha256": "ad2798e7212ff6a83fbeb2ade2708d2feec45be87957b9f7f3688959e40dc16e",
+      "size_bytes": 511325
+    },
+    "04_Architecture_and_UML_Diagrams/fig1_degradation_curves.pdf": {
+      "sha256": "8cf8066427c4b02a6a64d59304c4ddc80751a227fa57201f689976c30e577e10",
+      "size_bytes": 22993
+    },
+    "04_Architecture_and_UML_Diagrams/fig1_degradation_curves.png": {
+      "sha256": "57a59eb3424226aa1d20da8ebfb7818e1848e078cbddbb5015959e2124301098",
+      "size_bytes": 523867
+    },
+    "04_Architecture_and_UML_Diagrams/fig2_risk_coverage_aurc.pdf": {
+      "sha256": "13ef71ad7d4df3b230917f6193594fab510d8b399e8da12b50c875da09a03ffd",
+      "size_bytes": 23083
+    },
+    "04_Architecture_and_UML_Diagrams/fig2_risk_coverage_aurc.png": {
+      "sha256": "9876ff4cf3e13922d357c5fe55f4848635ef817f1f4e3aa7200509f1c56a04b4",
+      "size_bytes": 170668
+    },
+    "04_Architecture_and_UML_Diagrams/fig3_shap_fidelity_and_ablations.pdf": {
+      "sha256": "98f08142d5b9c731a48a6070b8fd4ab0d4a86eccf4958d0153468d9291b04ee5",
+      "size_bytes": 19843
+    },
+    "04_Architecture_and_UML_Diagrams/fig3_shap_fidelity_and_ablations.png": {
+      "sha256": "5eee13e93b8343f02334adbb11871555c52d6bb96a64995b6580dcf3a263807f",
+      "size_bytes": 90811
+    },
+    "04_Architecture_and_UML_Diagrams/fig4_label_scarcity_and_imputers.pdf": {
+      "sha256": "75b0a757fb47147991bf74fa822a2614b487949c874322a889d30eb425588ee6",
+      "size_bytes": 20149
+    },
+    "04_Architecture_and_UML_Diagrams/fig4_label_scarcity_and_imputers.png": {
+      "sha256": "09b94e368bb88936a0e460fbc801bff6a27eae447dab0a26086c064adcfd363b",
+      "size_bytes": 132413
+    },
+    "04_Architecture_and_UML_Diagrams/fig5_multisystem_and_security.pdf": {
+      "sha256": "7f5926909d6419ee2049135d3c1d1dad520cb715c167d0ce756dca36fb7ffa08",
+      "size_bytes": 28627
+    },
+    "04_Architecture_and_UML_Diagrams/fig5_multisystem_and_security.png": {
+      "sha256": "bc0aed4dfad44b41a7d781f3a6c8b32e85ad58d38292ff777e02ca773bd1cbb5",
+      "size_bytes": 235046
+    },
+    "04_Architecture_and_UML_Diagrams/uml1_use_case_diagram.pdf": {
+      "sha256": "5bfe9d1cf1489b1d25873b6ed6612d6d45ff096630bece8606fa4f8b0737424a",
+      "size_bytes": 21360
+    },
+    "04_Architecture_and_UML_Diagrams/uml1_use_case_diagram.png": {
+      "sha256": "0e8e0e2190b613fc9dfd89729d1b52bef9619e5cbaae36601ccb549fc70dd08f",
+      "size_bytes": 409805
+    },
+    "04_Architecture_and_UML_Diagrams/uml2_component_and_class_diagram.pdf": {
+      "sha256": "723c1cc88d12882fd24ea63a3e2160bd1a16e274cc1bb1562033e97eb47b30fa",
+      "size_bytes": 38218
+    },
+    "04_Architecture_and_UML_Diagrams/uml2_component_and_class_diagram.png": {
+      "sha256": "c6596fdb799f53049dc4345d886591261891acb23c0887312733ac4241d8a45b",
+      "size_bytes": 403491
+    },
+    "04_Architecture_and_UML_Diagrams/uml3_sequence_diagram_mnar_escalation.pdf": {
+      "sha256": "7d4060e41b3861f35a48fb8bcb73eb33ae03eb7abc427de3aae6879910c2a63b",
+      "size_bytes": 28758
+    },
+    "04_Architecture_and_UML_Diagrams/uml3_sequence_diagram_mnar_escalation.png": {
+      "sha256": "61f8e3ab2c1c68a2e74b53e540e087283660fa31745376fd04a686ccc204049e",
+      "size_bytes": 276286
+    },
+    "04_Architecture_and_UML_Diagrams/uml4_kubernetes_deployment_topology.pdf": {
+      "sha256": "0224f4c90a622d43c3e659a997db2b4bb6905e8599e15a144f4acae1e5078ed8",
+      "size_bytes": 24423
+    },
+    "04_Architecture_and_UML_Diagrams/uml4_kubernetes_deployment_topology.png": {
+      "sha256": "ec25d41f92ac455576ad3ea2636bb98221c4f788ada5fb1b1c9af5a217e01ba4",
+      "size_bytes": 327751
+    },
+    "05_Dashboard_Snapshots/tab1_incident_simulator_mnar_escalation.png": {
+      "sha256": "b58365221b70596eeacbf0ef2bad72ba50408e82af1fc43b9041b77ed638da08",
+      "size_bytes": 691040
+    },
+    "05_Dashboard_Snapshots/tab2_multisystem_375cases_and_security.png": {
+      "sha256": "4c75c6efabf4ebceff737082b1766a3a76abe1111e0f256ad9e58e268c735d61",
+      "size_bytes": 499903
+    },
+    "05_Dashboard_Snapshots/tab3_risk_coverage_and_5seed_explorer.png": {
+      "sha256": "ffc1a7aeb3b34c755138ac19559ed0a22e3123b09a005ce64bab7dbf9d38c22f",
+      "size_bytes": 361016
+    },
+    "05_Dashboard_Snapshots/tab4_paper_evidence_gallery.png": {
+      "sha256": "d5be2da966dbb52d46334aa4eceeae4c5639c7afc3102898c18a521bbce0002d",
+      "size_bytes": 911919
+    },
+    "05_Dashboard_Snapshots/tab5_hardware_16core_telemetry.png": {
+      "sha256": "472cde3f0afd65ee8617430da9c64fbbcb91a7b65eede4a89e5bcc9e93a964d8",
+      "size_bytes": 432088
+    }
+  }
+}

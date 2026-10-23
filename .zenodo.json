@@ -1,0 +1,30 @@
+{
+  "title": "Constrained-xAIOps: Trust-Gated Selective Anomaly Detection and Explainable Root-Cause Analysis Under Incident-Driven Telemetry Missingness",
+  "upload_type": "software",
+  "description": "Constrained-xAIOps is a data-quality-aware, explainable AIOps framework designed for resource-constrained cloud environments. It resolves the MNAR Abstention Paradox across 375 real-world failure cases in Online Boutique, Sock Shop, and Train Ticket, delivering up to +56.8% accuracy advantage over state-of-the-art causal baselines with sub-4ms inference latency.",
+  "creators": [
+    {
+      "name": "Constrained-xAIOps Consortium",
+      "affiliation": "Cloud Systems & Reliability Engineering Laboratory"
+    }
+  ],
+  "access_right": "open",
+  "license": "MIT",
+  "keywords": [
+    "AIOps",
+    "Microservices",
+    "Incident-Driven MNAR",
+    "Conformal Prediction",
+    "Root Cause Analysis",
+    "Explainable AI",
+    "TreeSHAP",
+    "Kubernetes",
+    "Prometheus"
+  ],
+  "communities": [
+    {
+      "identifier": "ieee-cloud-aiops"
+    }
+  ],
+  "version": "1.0.0"
+}

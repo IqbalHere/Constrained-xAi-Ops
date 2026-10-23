@@ -1,0 +1,21 @@
+{
+  "environment": {
+    "python": "3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]",
+    "seeds": [
+      42,
+      1024,
+      2025,
+      2026,
+      7777
+    ],
+    "hardware_threads": 16,
+    "dataset_cases": 125
+  },
+  "artifacts": {
+    "statistical_summary": "artifacts\\metrics\\statistical_summary.json",
+    "clean_baselines": "artifacts/metrics/clean_baselines_re1_ob.json",
+    "day2_trust_and_missingness": "artifacts/metrics/day2_trust_and_missingness_re1_ob.json",
+    "day3_selective_and_mnar_recovery": "artifacts/metrics/day3_selective_and_mnar_recovery_re1_ob.json"
+  },
+  "sha256_verification": "VALIDATED"
+}

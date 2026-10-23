@@ -1,0 +1,3388 @@
+{
+  "metadata": {
+    "dataset": "RCAEval RE1-OB (Online Boutique)",
+    "total_cases": 125,
+    "calibration_cases": 38,
+    "test_cases": 87,
+    "tau_T_conformal": 0.85,
+    "tau_A_threshold": 0.35,
+    "lambda_mnar": 3.5,
+    "seed": 42,
+    "timestamp": "2026-10-17T04:24:54Z",
+    "total_runtime_sec": 695.77
+  },
+  "experiments": {
+    "MCAR": {
+      "0.0": {
+        "p_miss": 0.0,
+        "step_runtime_sec": 22.67,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.9247,
+          "mean_T_rc": 0.9228,
+          "vanilla_baro": {
+            "AC@1": 0.6667,
+            "AC@3": 0.931,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8621,
+            "MRR": 0.8134,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 273.209
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.069,
+            "accepted_metrics": {
+              "AC@1": 0.6667,
+              "AC@3": 0.931,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.8134,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 273.209
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0575,
+            "mnar_recovery_rate": 0.9425,
+            "accepted_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 556.365
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 556.365
+            },
+            "aurc": 0.117
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1995,
+            "false_alarm_rate": 0.802
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.9255,
+          "mean_T_rc": 0.9214,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9474,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.7939,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 274.855
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 274.855
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 574.151
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 574.151
+            },
+            "aurc": 0.0956
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2594,
+            "false_alarm_rate": 0.7515
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.9249,
+          "mean_T_rc": 0.9223,
+          "vanilla_baro": {
+            "AC@1": 0.656,
+            "AC@3": 0.936,
+            "AC@5": 0.992,
+            "Avg@5": 0.8613,
+            "MRR": 0.8075,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 273.709
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.064,
+            "accepted_metrics": {
+              "AC@1": 0.656,
+              "AC@3": 0.936,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.8075,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 273.709
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.056,
+            "mnar_recovery_rate": 0.944,
+            "accepted_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 561.772
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 561.772
+            },
+            "aurc": 0.1136
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2158,
+            "false_alarm_rate": 0.7867
+          }
+        }
+      },
+      "0.1": {
+        "p_miss": 0.1,
+        "step_runtime_sec": 156.5,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.9028,
+          "mean_T_rc": 0.896,
+          "vanilla_baro": {
+            "AC@1": 0.6552,
+            "AC@3": 0.9425,
+            "AC@5": 1.0,
+            "Avg@5": 0.8659,
+            "MRR": 0.8077,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 299.341
+          },
+          "passive_abstention": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.0581,
+            "accepted_metrics": {
+              "AC@1": 0.6512,
+              "AC@3": 0.9419,
+              "AC@5": 1.0,
+              "Avg@5": 0.8643,
+              "MRR": 0.8054,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 301.016
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.0698,
+            "mnar_recovery_rate": 0.931,
+            "accepted_metrics": {
+              "AC@1": 0.6395,
+              "AC@3": 0.9302,
+              "AC@5": 0.9884,
+              "Avg@5": 0.8527,
+              "MRR": 0.7761,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9767,
+              "mean_runtime_ms": 2102.092
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6437,
+              "AC@3": 0.931,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8544,
+              "MRR": 0.7787,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 2084.069
+            },
+            "aurc": 0.1259
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2199,
+            "false_alarm_rate": 0.7854
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.9037,
+          "mean_T_rc": 0.8926,
+          "vanilla_baro": {
+            "AC@1": 0.6579,
+            "AC@3": 0.9211,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.8035,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 3767.203
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0789,
+            "accepted_metrics": {
+              "AC@1": 0.6579,
+              "AC@3": 0.9211,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.8035,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 3767.203
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.1053,
+            "mnar_recovery_rate": 0.8947,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.8947,
+              "AC@5": 1.0,
+              "Avg@5": 0.8421,
+              "MRR": 0.7662,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 4042.01
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.8947,
+              "AC@5": 1.0,
+              "Avg@5": 0.8421,
+              "MRR": 0.7662,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 4042.01
+            },
+            "aurc": 0.137
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2812,
+            "false_alarm_rate": 0.7339
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.9031,
+          "mean_T_rc": 0.8949,
+          "vanilla_baro": {
+            "AC@1": 0.656,
+            "AC@3": 0.936,
+            "AC@5": 1.0,
+            "Avg@5": 0.864,
+            "MRR": 0.8064,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 1353.571
+          },
+          "passive_abstention": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.0645,
+            "accepted_metrics": {
+              "AC@1": 0.6532,
+              "AC@3": 0.9355,
+              "AC@5": 1.0,
+              "Avg@5": 0.8629,
+              "MRR": 0.8048,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 1363.235
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.0806,
+            "mnar_recovery_rate": 0.92,
+            "accepted_metrics": {
+              "AC@1": 0.6371,
+              "AC@3": 0.9194,
+              "AC@5": 0.9919,
+              "Avg@5": 0.8495,
+              "MRR": 0.7731,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9839,
+              "mean_runtime_ms": 2696.583
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.64,
+              "AC@3": 0.92,
+              "AC@5": 0.992,
+              "Avg@5": 0.8507,
+              "MRR": 0.7749,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 2679.283
+            },
+            "aurc": 0.1366
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2366,
+            "false_alarm_rate": 0.7698
+          }
+        }
+      },
+      "0.2": {
+        "p_miss": 0.2,
+        "step_runtime_sec": 28.32,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8812,
+          "mean_T_rc": 0.8703,
+          "vanilla_baro": {
+            "AC@1": 0.6897,
+            "AC@3": 0.931,
+            "AC@5": 1.0,
+            "Avg@5": 0.8736,
+            "MRR": 0.8239,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 279.307
+          },
+          "passive_abstention": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.0698,
+            "accepted_metrics": {
+              "AC@1": 0.686,
+              "AC@3": 0.9302,
+              "AC@5": 1.0,
+              "Avg@5": 0.8721,
+              "MRR": 0.8219,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 279.511
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.1395,
+            "mnar_recovery_rate": 0.8621,
+            "accepted_metrics": {
+              "AC@1": 0.6279,
+              "AC@3": 0.8605,
+              "AC@5": 0.9651,
+              "Avg@5": 0.8178,
+              "MRR": 0.7599,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9302,
+              "mean_runtime_ms": 648.434
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6322,
+              "AC@3": 0.8621,
+              "AC@5": 0.9655,
+              "Avg@5": 0.8199,
+              "MRR": 0.7627,
+              "Chance@5": 0.5,
+              "Lift@5": 0.931,
+              "mean_runtime_ms": 647.717
+            },
+            "aurc": 0.1612
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.238,
+            "false_alarm_rate": 0.7854
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8817,
+          "mean_T_rc": 0.869,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9211,
+            "AC@5": 1.0,
+            "Avg@5": 0.8509,
+            "MRR": 0.7917,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 319.46
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0789,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9211,
+              "AC@5": 1.0,
+              "Avg@5": 0.8509,
+              "MRR": 0.7917,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 319.46
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.1316,
+            "mnar_recovery_rate": 0.8684,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.8684,
+              "AC@5": 0.9737,
+              "Avg@5": 0.8246,
+              "MRR": 0.7632,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9474,
+              "mean_runtime_ms": 589.687
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.8684,
+              "AC@5": 0.9737,
+              "Avg@5": 0.8246,
+              "MRR": 0.7632,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9474,
+              "mean_runtime_ms": 589.687
+            },
+            "aurc": 0.1911
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.256,
+            "false_alarm_rate": 0.8012
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8813,
+          "mean_T_rc": 0.8699,
+          "vanilla_baro": {
+            "AC@1": 0.672,
+            "AC@3": 0.928,
+            "AC@5": 1.0,
+            "Avg@5": 0.8667,
+            "MRR": 0.8141,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 291.513
+          },
+          "passive_abstention": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.0726,
+            "accepted_metrics": {
+              "AC@1": 0.6694,
+              "AC@3": 0.9274,
+              "AC@5": 1.0,
+              "Avg@5": 0.8656,
+              "MRR": 0.8126,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 291.753
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.1371,
+            "mnar_recovery_rate": 0.864,
+            "accepted_metrics": {
+              "AC@1": 0.629,
+              "AC@3": 0.8629,
+              "AC@5": 0.9677,
+              "Avg@5": 0.8199,
+              "MRR": 0.7609,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9355,
+              "mean_runtime_ms": 630.431
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.632,
+              "AC@3": 0.864,
+              "AC@5": 0.968,
+              "Avg@5": 0.8213,
+              "MRR": 0.7628,
+              "Chance@5": 0.5,
+              "Lift@5": 0.936,
+              "mean_runtime_ms": 630.076
+            },
+            "aurc": 0.172
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2435,
+            "false_alarm_rate": 0.7902
+          }
+        }
+      },
+      "0.4": {
+        "p_miss": 0.4,
+        "step_runtime_sec": 27.63,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8367,
+          "mean_T_rc": 0.8179,
+          "vanilla_baro": {
+            "AC@1": 0.6322,
+            "AC@3": 0.9425,
+            "AC@5": 1.0,
+            "Avg@5": 0.8582,
+            "MRR": 0.7962,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 299.688
+          },
+          "passive_abstention": {
+            "coverage": 0.023,
+            "abstention_rate": 0.977,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.5,
+              "AC@3": 1.0,
+              "AC@5": 1.0,
+              "Avg@5": 0.8333,
+              "MRR": 0.75,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 246.245
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.092,
+            "mnar_recovery_rate": 0.977,
+            "accepted_metrics": {
+              "AC@1": 0.6092,
+              "AC@3": 0.908,
+              "AC@5": 0.977,
+              "Avg@5": 0.8314,
+              "MRR": 0.7507,
+              "Chance@5": 0.5,
+              "Lift@5": 0.954,
+              "mean_runtime_ms": 632.991
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6092,
+              "AC@3": 0.908,
+              "AC@5": 0.977,
+              "Avg@5": 0.8314,
+              "MRR": 0.7507,
+              "Chance@5": 0.5,
+              "Lift@5": 0.954,
+              "mean_runtime_ms": 632.991
+            },
+            "aurc": 0.1203
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2341,
+            "false_alarm_rate": 0.7727
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8368,
+          "mean_T_rc": 0.812,
+          "vanilla_baro": {
+            "AC@1": 0.6053,
+            "AC@3": 0.8947,
+            "AC@5": 1.0,
+            "Avg@5": 0.8333,
+            "MRR": 0.7763,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 323.649
+          },
+          "passive_abstention": {
+            "coverage": 0.0526,
+            "abstention_rate": 0.9474,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.5,
+              "AC@3": 1.0,
+              "AC@5": 1.0,
+              "Avg@5": 0.8333,
+              "MRR": 0.75,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 309.942
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2368,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6053,
+              "AC@3": 0.7632,
+              "AC@5": 0.9737,
+              "Avg@5": 0.7807,
+              "MRR": 0.727,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9474,
+              "mean_runtime_ms": 614.981
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6053,
+              "AC@3": 0.7632,
+              "AC@5": 0.9737,
+              "Avg@5": 0.7807,
+              "MRR": 0.727,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9474,
+              "mean_runtime_ms": 614.981
+            },
+            "aurc": 0.2884
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2499,
+            "false_alarm_rate": 0.8129
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8368,
+          "mean_T_rc": 0.8161,
+          "vanilla_baro": {
+            "AC@1": 0.624,
+            "AC@3": 0.928,
+            "AC@5": 1.0,
+            "Avg@5": 0.8507,
+            "MRR": 0.7901,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 306.972
+          },
+          "passive_abstention": {
+            "coverage": 0.032,
+            "abstention_rate": 0.968,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.5,
+              "AC@3": 1.0,
+              "AC@5": 1.0,
+              "Avg@5": 0.8333,
+              "MRR": 0.75,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 278.094
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.136,
+            "mnar_recovery_rate": 0.968,
+            "accepted_metrics": {
+              "AC@1": 0.608,
+              "AC@3": 0.864,
+              "AC@5": 0.976,
+              "Avg@5": 0.816,
+              "MRR": 0.7435,
+              "Chance@5": 0.5,
+              "Lift@5": 0.952,
+              "mean_runtime_ms": 627.516
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.608,
+              "AC@3": 0.864,
+              "AC@5": 0.976,
+              "Avg@5": 0.816,
+              "MRR": 0.7435,
+              "Chance@5": 0.5,
+              "Lift@5": 0.952,
+              "mean_runtime_ms": 627.516
+            },
+            "aurc": 0.1695
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2386,
+            "false_alarm_rate": 0.7849
+          }
+        }
+      },
+      "0.6": {
+        "p_miss": 0.6,
+        "step_runtime_sec": 30.62,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.7907,
+          "mean_T_rc": 0.7604,
+          "vanilla_baro": {
+            "AC@1": 0.5747,
+            "AC@3": 0.9195,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8276,
+            "MRR": 0.758,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 360.298
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.1724,
+            "mnar_recovery_rate": 0.9885,
+            "accepted_metrics": {
+              "AC@1": 0.5517,
+              "AC@3": 0.8276,
+              "AC@5": 0.954,
+              "Avg@5": 0.7778,
+              "MRR": 0.7037,
+              "Chance@5": 0.5,
+              "Lift@5": 0.908,
+              "mean_runtime_ms": 713.779
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5517,
+              "AC@3": 0.8276,
+              "AC@5": 0.954,
+              "Avg@5": 0.7778,
+              "MRR": 0.7037,
+              "Chance@5": 0.5,
+              "Lift@5": 0.908,
+              "mean_runtime_ms": 713.779
+            },
+            "aurc": 0.2236
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1947,
+            "false_alarm_rate": 0.8123
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7909,
+          "mean_T_rc": 0.7555,
+          "vanilla_baro": {
+            "AC@1": 0.5526,
+            "AC@3": 0.9211,
+            "AC@5": 1.0,
+            "Avg@5": 0.8246,
+            "MRR": 0.7478,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 371.848
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2105,
+            "mnar_recovery_rate": 0.9737,
+            "accepted_metrics": {
+              "AC@1": 0.5263,
+              "AC@3": 0.7895,
+              "AC@5": 0.9474,
+              "Avg@5": 0.7544,
+              "MRR": 0.681,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8947,
+              "mean_runtime_ms": 621.544
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5263,
+              "AC@3": 0.7895,
+              "AC@5": 0.9474,
+              "Avg@5": 0.7544,
+              "MRR": 0.681,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8947,
+              "mean_runtime_ms": 621.544
+            },
+            "aurc": 0.2761
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1909,
+            "false_alarm_rate": 0.8187
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.7908,
+          "mean_T_rc": 0.759,
+          "vanilla_baro": {
+            "AC@1": 0.568,
+            "AC@3": 0.92,
+            "AC@5": 0.992,
+            "Avg@5": 0.8267,
+            "MRR": 0.7549,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 363.809
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.184,
+            "mnar_recovery_rate": 0.984,
+            "accepted_metrics": {
+              "AC@1": 0.544,
+              "AC@3": 0.816,
+              "AC@5": 0.952,
+              "Avg@5": 0.7707,
+              "MRR": 0.6968,
+              "Chance@5": 0.5,
+              "Lift@5": 0.904,
+              "mean_runtime_ms": 685.74
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.544,
+              "AC@3": 0.816,
+              "AC@5": 0.952,
+              "Avg@5": 0.7707,
+              "MRR": 0.6968,
+              "Chance@5": 0.5,
+              "Lift@5": 0.904,
+              "mean_runtime_ms": 685.74
+            },
+            "aurc": 0.238
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1934,
+            "false_alarm_rate": 0.8142
+          }
+        }
+      },
+      "0.8": {
+        "p_miss": 0.8,
+        "step_runtime_sec": 35.04,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.74,
+          "mean_T_rc": 0.698,
+          "vanilla_baro": {
+            "AC@1": 0.4943,
+            "AC@3": 0.908,
+            "AC@5": 0.977,
+            "Avg@5": 0.7931,
+            "MRR": 0.6938,
+            "Chance@5": 0.5,
+            "Lift@5": 0.954,
+            "mean_runtime_ms": 369.443
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2759,
+            "mnar_recovery_rate": 0.977,
+            "accepted_metrics": {
+              "AC@1": 0.4368,
+              "AC@3": 0.7241,
+              "AC@5": 0.9195,
+              "Avg@5": 0.6935,
+              "MRR": 0.6195,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8391,
+              "mean_runtime_ms": 868.816
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.4368,
+              "AC@3": 0.7241,
+              "AC@5": 0.9195,
+              "Avg@5": 0.6935,
+              "MRR": 0.6195,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8391,
+              "mean_runtime_ms": 868.816
+            },
+            "aurc": 0.3025
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1787,
+            "false_alarm_rate": 0.8301
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7404,
+          "mean_T_rc": 0.6926,
+          "vanilla_baro": {
+            "AC@1": 0.4211,
+            "AC@3": 0.7895,
+            "AC@5": 0.9737,
+            "Avg@5": 0.7281,
+            "MRR": 0.6368,
+            "Chance@5": 0.5,
+            "Lift@5": 0.9474,
+            "mean_runtime_ms": 459.167
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.3158,
+            "mnar_recovery_rate": 1.0,
+            "accepted_metrics": {
+              "AC@1": 0.4211,
+              "AC@3": 0.6842,
+              "AC@5": 0.8684,
+              "Avg@5": 0.6579,
+              "MRR": 0.6047,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7368,
+              "mean_runtime_ms": 766.335
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.4211,
+              "AC@3": 0.6842,
+              "AC@5": 0.8684,
+              "Avg@5": 0.6579,
+              "MRR": 0.6047,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7368,
+              "mean_runtime_ms": 766.335
+            },
+            "aurc": 0.3414
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1913,
+            "false_alarm_rate": 0.7661
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.7401,
+          "mean_T_rc": 0.6964,
+          "vanilla_baro": {
+            "AC@1": 0.472,
+            "AC@3": 0.872,
+            "AC@5": 0.976,
+            "Avg@5": 0.7733,
+            "MRR": 0.6765,
+            "Chance@5": 0.5,
+            "Lift@5": 0.952,
+            "mean_runtime_ms": 396.719
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.288,
+            "mnar_recovery_rate": 0.984,
+            "accepted_metrics": {
+              "AC@1": 0.432,
+              "AC@3": 0.712,
+              "AC@5": 0.904,
+              "Avg@5": 0.6827,
+              "MRR": 0.615,
+              "Chance@5": 0.5,
+              "Lift@5": 0.808,
+              "mean_runtime_ms": 837.662
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.432,
+              "AC@3": 0.712,
+              "AC@5": 0.904,
+              "Avg@5": 0.6827,
+              "MRR": 0.615,
+              "Chance@5": 0.5,
+              "Lift@5": 0.808,
+              "mean_runtime_ms": 837.662
+            },
+            "aurc": 0.3186
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1821,
+            "false_alarm_rate": 0.8107
+          }
+        }
+      }
+    },
+    "MAR": {
+      "0.0": {
+        "p_miss": 0.0,
+        "step_runtime_sec": 22.04,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.9247,
+          "mean_T_rc": 0.9228,
+          "vanilla_baro": {
+            "AC@1": 0.6667,
+            "AC@3": 0.931,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8621,
+            "MRR": 0.8134,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 311.643
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.069,
+            "accepted_metrics": {
+              "AC@1": 0.6667,
+              "AC@3": 0.931,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.8134,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 311.643
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0575,
+            "mnar_recovery_rate": 0.9425,
+            "accepted_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 553.04
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 553.04
+            },
+            "aurc": 0.117
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.241,
+            "false_alarm_rate": 0.7254
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.9255,
+          "mean_T_rc": 0.9214,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9474,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.7939,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 347.664
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 347.664
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 505.22
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 505.22
+            },
+            "aurc": 0.0956
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.278,
+            "false_alarm_rate": 0.731
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.9249,
+          "mean_T_rc": 0.9223,
+          "vanilla_baro": {
+            "AC@1": 0.656,
+            "AC@3": 0.936,
+            "AC@5": 0.992,
+            "Avg@5": 0.8613,
+            "MRR": 0.8075,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 322.594
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.064,
+            "accepted_metrics": {
+              "AC@1": 0.656,
+              "AC@3": 0.936,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.8075,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 322.594
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.056,
+            "mnar_recovery_rate": 0.944,
+            "accepted_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 538.503
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 538.503
+            },
+            "aurc": 0.1136
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2518,
+            "false_alarm_rate": 0.7271
+          }
+        }
+      },
+      "0.1": {
+        "p_miss": 0.1,
+        "step_runtime_sec": 24.06,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.9039,
+          "mean_T_rc": 0.8977,
+          "vanilla_baro": {
+            "AC@1": 0.6667,
+            "AC@3": 0.9425,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8659,
+            "MRR": 0.8144,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 333.234
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0575,
+            "accepted_metrics": {
+              "AC@1": 0.6667,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8659,
+              "MRR": 0.8144,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 333.234
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0805,
+            "mnar_recovery_rate": 0.9195,
+            "accepted_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9195,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8544,
+              "MRR": 0.7933,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 561.386
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9195,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8544,
+              "MRR": 0.7933,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 561.386
+            },
+            "aurc": 0.1327
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2285,
+            "false_alarm_rate": 0.7382
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.9046,
+          "mean_T_rc": 0.8968,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9474,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.7939,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 326.917
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 326.917
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 495.295
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 495.295
+            },
+            "aurc": 0.1081
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2693,
+            "false_alarm_rate": 0.7164
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.9041,
+          "mean_T_rc": 0.8975,
+          "vanilla_baro": {
+            "AC@1": 0.656,
+            "AC@3": 0.944,
+            "AC@5": 0.992,
+            "Avg@5": 0.864,
+            "MRR": 0.8081,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 331.313
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.056,
+            "accepted_metrics": {
+              "AC@1": 0.656,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.864,
+              "MRR": 0.8081,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 331.313
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.072,
+            "mnar_recovery_rate": 0.928,
+            "accepted_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.928,
+              "AC@5": 0.992,
+              "Avg@5": 0.856,
+              "MRR": 0.7935,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 541.294
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.928,
+              "AC@5": 0.992,
+              "Avg@5": 0.856,
+              "MRR": 0.7935,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 541.294
+            },
+            "aurc": 0.1272
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2402,
+            "false_alarm_rate": 0.7316
+          }
+        }
+      },
+      "0.2": {
+        "p_miss": 0.2,
+        "step_runtime_sec": 24.0,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8829,
+          "mean_T_rc": 0.873,
+          "vanilla_baro": {
+            "AC@1": 0.6322,
+            "AC@3": 0.931,
+            "AC@5": 1.0,
+            "Avg@5": 0.8544,
+            "MRR": 0.796,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 318.642
+          },
+          "passive_abstention": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.0698,
+            "accepted_metrics": {
+              "AC@1": 0.6279,
+              "AC@3": 0.9302,
+              "AC@5": 1.0,
+              "Avg@5": 0.8527,
+              "MRR": 0.7936,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 319.952
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.0698,
+            "mnar_recovery_rate": 0.931,
+            "accepted_metrics": {
+              "AC@1": 0.6163,
+              "AC@3": 0.9302,
+              "AC@5": 1.0,
+              "Avg@5": 0.8488,
+              "MRR": 0.7723,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 492.832
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6207,
+              "AC@3": 0.931,
+              "AC@5": 1.0,
+              "Avg@5": 0.8506,
+              "MRR": 0.7749,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 491.624
+            },
+            "aurc": 0.1203
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2421,
+            "false_alarm_rate": 0.7484
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8835,
+          "mean_T_rc": 0.8708,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9474,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.7939,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 323.76
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 323.76
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 461.144
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 461.144
+            },
+            "aurc": 0.0748
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.252,
+            "false_alarm_rate": 0.7398
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8831,
+          "mean_T_rc": 0.8723,
+          "vanilla_baro": {
+            "AC@1": 0.632,
+            "AC@3": 0.936,
+            "AC@5": 1.0,
+            "Avg@5": 0.856,
+            "MRR": 0.7953,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 320.198
+          },
+          "passive_abstention": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.0645,
+            "accepted_metrics": {
+              "AC@1": 0.629,
+              "AC@3": 0.9355,
+              "AC@5": 1.0,
+              "Avg@5": 0.8548,
+              "MRR": 0.7937,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 321.119
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.0645,
+            "mnar_recovery_rate": 0.936,
+            "accepted_metrics": {
+              "AC@1": 0.621,
+              "AC@3": 0.9355,
+              "AC@5": 1.0,
+              "Avg@5": 0.8522,
+              "MRR": 0.7789,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 483.121
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.624,
+              "AC@3": 0.936,
+              "AC@5": 1.0,
+              "Avg@5": 0.8533,
+              "MRR": 0.7807,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 482.358
+            },
+            "aurc": 0.108
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2448,
+            "false_alarm_rate": 0.7458
+          }
+        }
+      },
+      "0.4": {
+        "p_miss": 0.4,
+        "step_runtime_sec": 24.38,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8399,
+          "mean_T_rc": 0.8206,
+          "vanilla_baro": {
+            "AC@1": 0.6322,
+            "AC@3": 0.9425,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8544,
+            "MRR": 0.7958,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 352.728
+          },
+          "passive_abstention": {
+            "coverage": 0.1494,
+            "abstention_rate": 0.8506,
+            "selective_risk_ac3": 0.2308,
+            "accepted_metrics": {
+              "AC@1": 0.5385,
+              "AC@3": 0.7692,
+              "AC@5": 0.9231,
+              "Avg@5": 0.7436,
+              "MRR": 0.7013,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8462,
+              "mean_runtime_ms": 389.206
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.5862,
+            "abstention_rate": 0.4138,
+            "selective_risk_ac3": 0.0784,
+            "mnar_recovery_rate": 0.954,
+            "accepted_metrics": {
+              "AC@1": 0.6667,
+              "AC@3": 0.9216,
+              "AC@5": 0.9804,
+              "Avg@5": 0.8562,
+              "MRR": 0.7882,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9608,
+              "mean_runtime_ms": 517.436
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6207,
+              "AC@3": 0.931,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8467,
+              "MRR": 0.7718,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 488.254
+            },
+            "aurc": 0.0971
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2446,
+            "false_alarm_rate": 0.7663
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8403,
+          "mean_T_rc": 0.8163,
+          "vanilla_baro": {
+            "AC@1": 0.6842,
+            "AC@3": 0.9211,
+            "AC@5": 1.0,
+            "Avg@5": 0.8684,
+            "MRR": 0.8167,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 333.702
+          },
+          "passive_abstention": {
+            "coverage": 0.2105,
+            "abstention_rate": 0.7895,
+            "selective_risk_ac3": 0.125,
+            "accepted_metrics": {
+              "AC@1": 0.625,
+              "AC@3": 0.875,
+              "AC@5": 1.0,
+              "Avg@5": 0.8333,
+              "MRR": 0.775,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 350.568
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.5,
+            "abstention_rate": 0.5,
+            "selective_risk_ac3": 0.1053,
+            "mnar_recovery_rate": 0.9211,
+            "accepted_metrics": {
+              "AC@1": 0.7368,
+              "AC@3": 0.8947,
+              "AC@5": 1.0,
+              "Avg@5": 0.8772,
+              "MRR": 0.8395,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 513.582
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6842,
+              "AC@3": 0.8947,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.8145,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 536.93
+            },
+            "aurc": 0.1433
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.245,
+            "false_alarm_rate": 0.7222
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.84,
+          "mean_T_rc": 0.8193,
+          "vanilla_baro": {
+            "AC@1": 0.648,
+            "AC@3": 0.936,
+            "AC@5": 0.992,
+            "Avg@5": 0.8587,
+            "MRR": 0.8021,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 346.944
+          },
+          "passive_abstention": {
+            "coverage": 0.168,
+            "abstention_rate": 0.832,
+            "selective_risk_ac3": 0.1905,
+            "accepted_metrics": {
+              "AC@1": 0.5714,
+              "AC@3": 0.8095,
+              "AC@5": 0.9524,
+              "Avg@5": 0.7778,
+              "MRR": 0.7294,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9048,
+              "mean_runtime_ms": 374.487
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.56,
+            "abstention_rate": 0.44,
+            "selective_risk_ac3": 0.0857,
+            "mnar_recovery_rate": 0.944,
+            "accepted_metrics": {
+              "AC@1": 0.6857,
+              "AC@3": 0.9143,
+              "AC@5": 0.9857,
+              "Avg@5": 0.8619,
+              "MRR": 0.8021,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9714,
+              "mean_runtime_ms": 516.39
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.64,
+              "AC@3": 0.92,
+              "AC@5": 0.992,
+              "Avg@5": 0.8507,
+              "MRR": 0.7848,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 503.052
+            },
+            "aurc": 0.1074
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2445,
+            "false_alarm_rate": 0.7529
+          }
+        }
+      },
+      "0.6": {
+        "p_miss": 0.6,
+        "step_runtime_sec": 123.15,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.7911,
+          "mean_T_rc": 0.7612,
+          "vanilla_baro": {
+            "AC@1": 0.5402,
+            "AC@3": 0.8621,
+            "AC@5": 0.954,
+            "Avg@5": 0.7854,
+            "MRR": 0.7222,
+            "Chance@5": 0.5,
+            "Lift@5": 0.908,
+            "mean_runtime_ms": 399.479
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.908,
+            "abstention_rate": 0.092,
+            "selective_risk_ac3": 0.1013,
+            "mnar_recovery_rate": 0.8736,
+            "accepted_metrics": {
+              "AC@1": 0.5443,
+              "AC@3": 0.8987,
+              "AC@5": 0.962,
+              "Avg@5": 0.8017,
+              "MRR": 0.7136,
+              "Chance@5": 0.5,
+              "Lift@5": 0.9241,
+              "mean_runtime_ms": 4340.22
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5057,
+              "AC@3": 0.8621,
+              "AC@5": 0.9425,
+              "Avg@5": 0.7701,
+              "MRR": 0.6822,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8851,
+              "mean_runtime_ms": 3973.433
+            },
+            "aurc": 0.071
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1605,
+            "false_alarm_rate": 0.8289
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7924,
+          "mean_T_rc": 0.7562,
+          "vanilla_baro": {
+            "AC@1": 0.6053,
+            "AC@3": 0.8947,
+            "AC@5": 0.9474,
+            "Avg@5": 0.8158,
+            "MRR": 0.7467,
+            "Chance@5": 0.5,
+            "Lift@5": 0.8947,
+            "mean_runtime_ms": 408.04
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9474,
+            "abstention_rate": 0.0526,
+            "selective_risk_ac3": 0.1389,
+            "mnar_recovery_rate": 0.8947,
+            "accepted_metrics": {
+              "AC@1": 0.5556,
+              "AC@3": 0.8611,
+              "AC@5": 0.9444,
+              "Avg@5": 0.787,
+              "MRR": 0.71,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8889,
+              "mean_runtime_ms": 609.283
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5526,
+              "AC@3": 0.8421,
+              "AC@5": 0.9211,
+              "Avg@5": 0.7719,
+              "MRR": 0.7027,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 581.333
+            },
+            "aurc": 0.1518
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1785,
+            "false_alarm_rate": 0.8772
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.7915,
+          "mean_T_rc": 0.7597,
+          "vanilla_baro": {
+            "AC@1": 0.56,
+            "AC@3": 0.872,
+            "AC@5": 0.952,
+            "Avg@5": 0.7947,
+            "MRR": 0.7296,
+            "Chance@5": 0.5,
+            "Lift@5": 0.904,
+            "mean_runtime_ms": 402.081
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.92,
+            "abstention_rate": 0.08,
+            "selective_risk_ac3": 0.113,
+            "mnar_recovery_rate": 0.88,
+            "accepted_metrics": {
+              "AC@1": 0.5478,
+              "AC@3": 0.887,
+              "AC@5": 0.9565,
+              "Avg@5": 0.7971,
+              "MRR": 0.7125,
+              "Chance@5": 0.5,
+              "Lift@5": 0.913,
+              "mean_runtime_ms": 3172.274
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.52,
+              "AC@3": 0.856,
+              "AC@5": 0.936,
+              "Avg@5": 0.7707,
+              "MRR": 0.6885,
+              "Chance@5": 0.5,
+              "Lift@5": 0.872,
+              "mean_runtime_ms": 2942.235
+            },
+            "aurc": 0.0917
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1656,
+            "false_alarm_rate": 0.8436
+          }
+        }
+      },
+      "0.8": {
+        "p_miss": 0.8,
+        "step_runtime_sec": 24.33,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.7392,
+          "mean_T_rc": 0.6959,
+          "vanilla_baro": {
+            "AC@1": 0.4138,
+            "AC@3": 0.7241,
+            "AC@5": 0.8046,
+            "Avg@5": 0.6475,
+            "MRR": 0.5953,
+            "Chance@5": 0.5,
+            "Lift@5": 0.6092,
+            "mean_runtime_ms": 227.284
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2989,
+            "mnar_recovery_rate": 0.9885,
+            "accepted_metrics": {
+              "AC@1": 0.3678,
+              "AC@3": 0.7011,
+              "AC@5": 0.8506,
+              "Avg@5": 0.6398,
+              "MRR": 0.5522,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7011,
+              "mean_runtime_ms": 440.675
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.3678,
+              "AC@3": 0.7011,
+              "AC@5": 0.8506,
+              "Avg@5": 0.6398,
+              "MRR": 0.5522,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7011,
+              "mean_runtime_ms": 440.675
+            },
+            "aurc": 0.152
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1283,
+            "false_alarm_rate": 0.8978
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7393,
+          "mean_T_rc": 0.6926,
+          "vanilla_baro": {
+            "AC@1": 0.4737,
+            "AC@3": 0.6579,
+            "AC@5": 0.8421,
+            "Avg@5": 0.6579,
+            "MRR": 0.6166,
+            "Chance@5": 0.5,
+            "Lift@5": 0.6842,
+            "mean_runtime_ms": 259.436
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.3421,
+            "mnar_recovery_rate": 1.0,
+            "accepted_metrics": {
+              "AC@1": 0.4211,
+              "AC@3": 0.6579,
+              "AC@5": 0.7895,
+              "Avg@5": 0.6228,
+              "MRR": 0.592,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5789,
+              "mean_runtime_ms": 412.735
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.4211,
+              "AC@3": 0.6579,
+              "AC@5": 0.7895,
+              "Avg@5": 0.6228,
+              "MRR": 0.592,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5789,
+              "mean_runtime_ms": 412.735
+            },
+            "aurc": 0.2269
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1384,
+            "false_alarm_rate": 0.9181
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.7392,
+          "mean_T_rc": 0.6949,
+          "vanilla_baro": {
+            "AC@1": 0.432,
+            "AC@3": 0.704,
+            "AC@5": 0.816,
+            "Avg@5": 0.6507,
+            "MRR": 0.6018,
+            "Chance@5": 0.5,
+            "Lift@5": 0.632,
+            "mean_runtime_ms": 237.058
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.312,
+            "mnar_recovery_rate": 0.992,
+            "accepted_metrics": {
+              "AC@1": 0.384,
+              "AC@3": 0.688,
+              "AC@5": 0.832,
+              "Avg@5": 0.6347,
+              "MRR": 0.5643,
+              "Chance@5": 0.5,
+              "Lift@5": 0.664,
+              "mean_runtime_ms": 432.181
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.384,
+              "AC@3": 0.688,
+              "AC@5": 0.832,
+              "Avg@5": 0.6347,
+              "MRR": 0.5643,
+              "Chance@5": 0.5,
+              "Lift@5": 0.664,
+              "mean_runtime_ms": 432.181
+            },
+            "aurc": 0.1699
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1312,
+            "false_alarm_rate": 0.904
+          }
+        }
+      }
+    },
+    "MNAR": {
+      "0.0": {
+        "p_miss": 0.0,
+        "step_runtime_sec": 22.29,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.9247,
+          "mean_T_rc": 0.9228,
+          "vanilla_baro": {
+            "AC@1": 0.6667,
+            "AC@3": 0.931,
+            "AC@5": 0.9885,
+            "Avg@5": 0.8621,
+            "MRR": 0.8134,
+            "Chance@5": 0.5,
+            "Lift@5": 0.977,
+            "mean_runtime_ms": 247.912
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.069,
+            "accepted_metrics": {
+              "AC@1": 0.6667,
+              "AC@3": 0.931,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.8134,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 247.912
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0575,
+            "mnar_recovery_rate": 0.9425,
+            "accepted_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 576.507
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6552,
+              "AC@3": 0.9425,
+              "AC@5": 0.9885,
+              "Avg@5": 0.8621,
+              "MRR": 0.7914,
+              "Chance@5": 0.5,
+              "Lift@5": 0.977,
+              "mean_runtime_ms": 576.507
+            },
+            "aurc": 0.117
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2072,
+            "false_alarm_rate": 0.7918
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.9255,
+          "mean_T_rc": 0.9214,
+          "vanilla_baro": {
+            "AC@1": 0.6316,
+            "AC@3": 0.9474,
+            "AC@5": 1.0,
+            "Avg@5": 0.8596,
+            "MRR": 0.7939,
+            "Chance@5": 0.5,
+            "Lift@5": 1.0,
+            "mean_runtime_ms": 254.405
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 254.405
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.0526,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 540.43
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.6316,
+              "AC@3": 0.9474,
+              "AC@5": 1.0,
+              "Avg@5": 0.8596,
+              "MRR": 0.7939,
+              "Chance@5": 0.5,
+              "Lift@5": 1.0,
+              "mean_runtime_ms": 540.43
+            },
+            "aurc": 0.0956
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.239,
+            "false_alarm_rate": 0.7398
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.9249,
+          "mean_T_rc": 0.9223,
+          "vanilla_baro": {
+            "AC@1": 0.656,
+            "AC@3": 0.936,
+            "AC@5": 0.992,
+            "Avg@5": 0.8613,
+            "MRR": 0.8075,
+            "Chance@5": 0.5,
+            "Lift@5": 0.984,
+            "mean_runtime_ms": 249.886
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.064,
+            "accepted_metrics": {
+              "AC@1": 0.656,
+              "AC@3": 0.936,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.8075,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 249.886
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.056,
+            "mnar_recovery_rate": 0.944,
+            "accepted_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 565.54
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.648,
+              "AC@3": 0.944,
+              "AC@5": 0.992,
+              "Avg@5": 0.8613,
+              "MRR": 0.7921,
+              "Chance@5": 0.5,
+              "Lift@5": 0.984,
+              "mean_runtime_ms": 565.54
+            },
+            "aurc": 0.1136
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.2165,
+            "false_alarm_rate": 0.776
+          }
+        }
+      },
+      "0.1": {
+        "p_miss": 0.1,
+        "step_runtime_sec": 25.74,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8948,
+          "mean_T_rc": 0.8117,
+          "vanilla_baro": {
+            "AC@1": 0.1494,
+            "AC@3": 0.5057,
+            "AC@5": 0.7471,
+            "Avg@5": 0.4674,
+            "MRR": 0.3894,
+            "Chance@5": 0.5,
+            "Lift@5": 0.4943,
+            "mean_runtime_ms": 307.137
+          },
+          "passive_abstention": {
+            "coverage": 0.9885,
+            "abstention_rate": 0.0115,
+            "selective_risk_ac3": 0.5,
+            "accepted_metrics": {
+              "AC@1": 0.1395,
+              "AC@3": 0.5,
+              "AC@5": 0.7442,
+              "Avg@5": 0.4612,
+              "MRR": 0.3823,
+              "Chance@5": 0.5,
+              "Lift@5": 0.4884,
+              "mean_runtime_ms": 308.518
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2529,
+            "mnar_recovery_rate": 0.8966,
+            "accepted_metrics": {
+              "AC@1": 0.5057,
+              "AC@3": 0.7471,
+              "AC@5": 0.9425,
+              "Avg@5": 0.7318,
+              "MRR": 0.6604,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8851,
+              "mean_runtime_ms": 407.472
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5057,
+              "AC@3": 0.7471,
+              "AC@5": 0.9425,
+              "Avg@5": 0.7318,
+              "MRR": 0.6604,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8851,
+              "mean_runtime_ms": 407.472
+            },
+            "aurc": 0.264
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.0975,
+            "false_alarm_rate": 0.6322
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8952,
+          "mean_T_rc": 0.808,
+          "vanilla_baro": {
+            "AC@1": 0.2632,
+            "AC@3": 0.4737,
+            "AC@5": 0.9211,
+            "Avg@5": 0.5526,
+            "MRR": 0.4606,
+            "Chance@5": 0.5,
+            "Lift@5": 0.8421,
+            "mean_runtime_ms": 288.053
+          },
+          "passive_abstention": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.5263,
+            "accepted_metrics": {
+              "AC@1": 0.2632,
+              "AC@3": 0.4737,
+              "AC@5": 0.9211,
+              "Avg@5": 0.5526,
+              "MRR": 0.4606,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 288.053
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.1842,
+            "mnar_recovery_rate": 0.9211,
+            "accepted_metrics": {
+              "AC@1": 0.5,
+              "AC@3": 0.8158,
+              "AC@5": 0.9211,
+              "Avg@5": 0.7456,
+              "MRR": 0.6654,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 439.422
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5,
+              "AC@3": 0.8158,
+              "AC@5": 0.9211,
+              "Avg@5": 0.7456,
+              "MRR": 0.6654,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 439.422
+            },
+            "aurc": 0.3137
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.0853,
+            "false_alarm_rate": 0.6111
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8949,
+          "mean_T_rc": 0.8106,
+          "vanilla_baro": {
+            "AC@1": 0.184,
+            "AC@3": 0.496,
+            "AC@5": 0.8,
+            "Avg@5": 0.4933,
+            "MRR": 0.4111,
+            "Chance@5": 0.5,
+            "Lift@5": 0.6,
+            "mean_runtime_ms": 301.335
+          },
+          "passive_abstention": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.5081,
+            "accepted_metrics": {
+              "AC@1": 0.1774,
+              "AC@3": 0.4919,
+              "AC@5": 0.7984,
+              "Avg@5": 0.4892,
+              "MRR": 0.4063,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5968,
+              "mean_runtime_ms": 302.247
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.232,
+            "mnar_recovery_rate": 0.904,
+            "accepted_metrics": {
+              "AC@1": 0.504,
+              "AC@3": 0.768,
+              "AC@5": 0.936,
+              "Avg@5": 0.736,
+              "MRR": 0.6619,
+              "Chance@5": 0.5,
+              "Lift@5": 0.872,
+              "mean_runtime_ms": 417.185
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.504,
+              "AC@3": 0.768,
+              "AC@5": 0.936,
+              "Avg@5": 0.736,
+              "MRR": 0.6619,
+              "Chance@5": 0.5,
+              "Lift@5": 0.872,
+              "mean_runtime_ms": 417.185
+            },
+            "aurc": 0.2757
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.093,
+            "false_alarm_rate": 0.6258
+          }
+        }
+      },
+      "0.2": {
+        "p_miss": 0.2,
+        "step_runtime_sec": 25.92,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8708,
+          "mean_T_rc": 0.7668,
+          "vanilla_baro": {
+            "AC@1": 0.1034,
+            "AC@3": 0.2529,
+            "AC@5": 0.3908,
+            "Avg@5": 0.249,
+            "MRR": 0.2765,
+            "Chance@5": 0.5,
+            "Lift@5": -0.2184,
+            "mean_runtime_ms": 264.446
+          },
+          "passive_abstention": {
+            "coverage": 0.8966,
+            "abstention_rate": 0.1034,
+            "selective_risk_ac3": 0.7436,
+            "accepted_metrics": {
+              "AC@1": 0.1154,
+              "AC@3": 0.2564,
+              "AC@5": 0.3974,
+              "Avg@5": 0.2564,
+              "MRR": 0.2852,
+              "Chance@5": 0.5,
+              "Lift@5": -0.2051,
+              "mean_runtime_ms": 267.699
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.2414,
+            "mnar_recovery_rate": 0.954,
+            "accepted_metrics": {
+              "AC@1": 0.4828,
+              "AC@3": 0.7586,
+              "AC@5": 0.8966,
+              "Avg@5": 0.7126,
+              "MRR": 0.6467,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7931,
+              "mean_runtime_ms": 375.155
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.4828,
+              "AC@3": 0.7586,
+              "AC@5": 0.8966,
+              "Avg@5": 0.7126,
+              "MRR": 0.6467,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7931,
+              "mean_runtime_ms": 375.155
+            },
+            "aurc": 0.1801
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1033,
+            "false_alarm_rate": 0.5696
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.8712,
+          "mean_T_rc": 0.7602,
+          "vanilla_baro": {
+            "AC@1": 0.1316,
+            "AC@3": 0.4211,
+            "AC@5": 0.6579,
+            "Avg@5": 0.4035,
+            "MRR": 0.351,
+            "Chance@5": 0.5,
+            "Lift@5": 0.3158,
+            "mean_runtime_ms": 282.337
+          },
+          "passive_abstention": {
+            "coverage": 0.9211,
+            "abstention_rate": 0.0789,
+            "selective_risk_ac3": 0.6286,
+            "accepted_metrics": {
+              "AC@1": 0.0857,
+              "AC@3": 0.3714,
+              "AC@5": 0.6286,
+              "Avg@5": 0.3619,
+              "MRR": 0.3145,
+              "Chance@5": 0.5,
+              "Lift@5": 0.2571,
+              "mean_runtime_ms": 294.022
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.1842,
+            "mnar_recovery_rate": 0.9474,
+            "accepted_metrics": {
+              "AC@1": 0.5263,
+              "AC@3": 0.8158,
+              "AC@5": 0.9211,
+              "Avg@5": 0.7544,
+              "MRR": 0.6884,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 393.363
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5263,
+              "AC@3": 0.8158,
+              "AC@5": 0.9211,
+              "Avg@5": 0.7544,
+              "MRR": 0.6884,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8421,
+              "mean_runtime_ms": 393.363
+            },
+            "aurc": 0.2418
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.0828,
+            "false_alarm_rate": 0.5585
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8709,
+          "mean_T_rc": 0.7648,
+          "vanilla_baro": {
+            "AC@1": 0.112,
+            "AC@3": 0.304,
+            "AC@5": 0.472,
+            "Avg@5": 0.296,
+            "MRR": 0.2992,
+            "Chance@5": 0.5,
+            "Lift@5": -0.056,
+            "mean_runtime_ms": 269.885
+          },
+          "passive_abstention": {
+            "coverage": 0.904,
+            "abstention_rate": 0.096,
+            "selective_risk_ac3": 0.708,
+            "accepted_metrics": {
+              "AC@1": 0.1062,
+              "AC@3": 0.292,
+              "AC@5": 0.469,
+              "Avg@5": 0.2891,
+              "MRR": 0.2943,
+              "Chance@5": 0.5,
+              "Lift@5": -0.0619,
+              "mean_runtime_ms": 275.852
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.224,
+            "mnar_recovery_rate": 0.952,
+            "accepted_metrics": {
+              "AC@1": 0.496,
+              "AC@3": 0.776,
+              "AC@5": 0.904,
+              "Avg@5": 0.7253,
+              "MRR": 0.6594,
+              "Chance@5": 0.5,
+              "Lift@5": 0.808,
+              "mean_runtime_ms": 380.69
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.496,
+              "AC@3": 0.776,
+              "AC@5": 0.904,
+              "Avg@5": 0.7253,
+              "MRR": 0.6594,
+              "Chance@5": 0.5,
+              "Lift@5": 0.808,
+              "mean_runtime_ms": 380.69
+            },
+            "aurc": 0.1994
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.0951,
+            "false_alarm_rate": 0.5662
+          }
+        }
+      },
+      "0.4": {
+        "p_miss": 0.4,
+        "step_runtime_sec": 26.02,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.8238,
+          "mean_T_rc": 0.7009,
+          "vanilla_baro": {
+            "AC@1": 0.1034,
+            "AC@3": 0.3563,
+            "AC@5": 0.5172,
+            "Avg@5": 0.3257,
+            "MRR": 0.3031,
+            "Chance@5": 0.5,
+            "Lift@5": 0.0345,
+            "mean_runtime_ms": 307.601
+          },
+          "passive_abstention": {
+            "coverage": 0.023,
+            "abstention_rate": 0.977,
+            "selective_risk_ac3": 1.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.5,
+              "Avg@5": 0.1667,
+              "MRR": 0.2083,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 272.01
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.954,
+            "abstention_rate": 0.046,
+            "selective_risk_ac3": 0.1205,
+            "mnar_recovery_rate": 0.954,
+            "accepted_metrics": {
+              "AC@1": 0.5542,
+              "AC@3": 0.8795,
+              "AC@5": 0.9398,
+              "Avg@5": 0.7912,
+              "MRR": 0.7198,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8795,
+              "mean_runtime_ms": 405.888
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5517,
+              "AC@3": 0.8736,
+              "AC@5": 0.9425,
+              "Avg@5": 0.7893,
+              "MRR": 0.7183,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8851,
+              "mean_runtime_ms": 401.675
+            },
+            "aurc": 0.1075
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1003,
+            "false_alarm_rate": 0.5134
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.824,
+          "mean_T_rc": 0.697,
+          "vanilla_baro": {
+            "AC@1": 0.1053,
+            "AC@3": 0.2895,
+            "AC@5": 0.5,
+            "Avg@5": 0.2982,
+            "MRR": 0.2966,
+            "Chance@5": 0.5,
+            "Lift@5": 0.0,
+            "mean_runtime_ms": 314.553
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9737,
+            "abstention_rate": 0.0263,
+            "selective_risk_ac3": 0.1351,
+            "mnar_recovery_rate": 1.0,
+            "accepted_metrics": {
+              "AC@1": 0.5676,
+              "AC@3": 0.8649,
+              "AC@5": 0.9459,
+              "Avg@5": 0.7928,
+              "MRR": 0.7095,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8919,
+              "mean_runtime_ms": 423.139
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.5526,
+              "AC@3": 0.8684,
+              "AC@5": 0.9474,
+              "Avg@5": 0.7895,
+              "MRR": 0.6996,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8947,
+              "mean_runtime_ms": 421.096
+            },
+            "aurc": 0.0789
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1038,
+            "false_alarm_rate": 0.5292
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.8239,
+          "mean_T_rc": 0.6997,
+          "vanilla_baro": {
+            "AC@1": 0.104,
+            "AC@3": 0.336,
+            "AC@5": 0.512,
+            "Avg@5": 0.3173,
+            "MRR": 0.3011,
+            "Chance@5": 0.5,
+            "Lift@5": 0.024,
+            "mean_runtime_ms": 309.714
+          },
+          "passive_abstention": {
+            "coverage": 0.016,
+            "abstention_rate": 0.984,
+            "selective_risk_ac3": 1.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.5,
+              "Avg@5": 0.1667,
+              "MRR": 0.2083,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 272.01
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.96,
+            "abstention_rate": 0.04,
+            "selective_risk_ac3": 0.125,
+            "mnar_recovery_rate": 0.968,
+            "accepted_metrics": {
+              "AC@1": 0.5583,
+              "AC@3": 0.875,
+              "AC@5": 0.9417,
+              "Avg@5": 0.7917,
+              "MRR": 0.7166,
+              "Chance@5": 0.5,
+              "Lift@5": 0.8833,
+              "mean_runtime_ms": 411.207
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.552,
+              "AC@3": 0.872,
+              "AC@5": 0.944,
+              "Avg@5": 0.7893,
+              "MRR": 0.7126,
+              "Chance@5": 0.5,
+              "Lift@5": 0.888,
+              "mean_runtime_ms": 407.579
+            },
+            "aurc": 0.096
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1006,
+            "false_alarm_rate": 0.5182
+          }
+        }
+      },
+      "0.6": {
+        "p_miss": 0.6,
+        "step_runtime_sec": 26.59,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.7763,
+          "mean_T_rc": 0.654,
+          "vanilla_baro": {
+            "AC@1": 0.1724,
+            "AC@3": 0.4713,
+            "AC@5": 0.5402,
+            "Avg@5": 0.3946,
+            "MRR": 0.3717,
+            "Chance@5": 0.5,
+            "Lift@5": 0.0805,
+            "mean_runtime_ms": 309.284
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9655,
+            "abstention_rate": 0.0345,
+            "selective_risk_ac3": 0.25,
+            "mnar_recovery_rate": 0.931,
+            "accepted_metrics": {
+              "AC@1": 0.3333,
+              "AC@3": 0.75,
+              "AC@5": 0.869,
+              "Avg@5": 0.6508,
+              "MRR": 0.5592,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7381,
+              "mean_runtime_ms": 393.737
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.3448,
+              "AC@3": 0.7471,
+              "AC@5": 0.8621,
+              "Avg@5": 0.6513,
+              "MRR": 0.5649,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7241,
+              "mean_runtime_ms": 398.185
+            },
+            "aurc": 0.2639
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1174,
+            "false_alarm_rate": 0.5862
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7765,
+          "mean_T_rc": 0.651,
+          "vanilla_baro": {
+            "AC@1": 0.2105,
+            "AC@3": 0.4737,
+            "AC@5": 0.5789,
+            "Avg@5": 0.4211,
+            "MRR": 0.4099,
+            "Chance@5": 0.5,
+            "Lift@5": 0.1579,
+            "mean_runtime_ms": 297.799
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9737,
+            "abstention_rate": 0.0263,
+            "selective_risk_ac3": 0.3243,
+            "mnar_recovery_rate": 0.8684,
+            "accepted_metrics": {
+              "AC@1": 0.3784,
+              "AC@3": 0.6757,
+              "AC@5": 0.8649,
+              "Avg@5": 0.6396,
+              "MRR": 0.578,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7297,
+              "mean_runtime_ms": 433.885
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.3947,
+              "AC@3": 0.6842,
+              "AC@5": 0.8684,
+              "Avg@5": 0.6491,
+              "MRR": 0.5891,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7368,
+              "mean_runtime_ms": 430.482
+            },
+            "aurc": 0.3966
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.177,
+            "false_alarm_rate": 0.5234
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.7763,
+          "mean_T_rc": 0.6531,
+          "vanilla_baro": {
+            "AC@1": 0.184,
+            "AC@3": 0.472,
+            "AC@5": 0.552,
+            "Avg@5": 0.4027,
+            "MRR": 0.3833,
+            "Chance@5": 0.5,
+            "Lift@5": 0.104,
+            "mean_runtime_ms": 305.792
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.968,
+            "abstention_rate": 0.032,
+            "selective_risk_ac3": 0.2727,
+            "mnar_recovery_rate": 0.912,
+            "accepted_metrics": {
+              "AC@1": 0.3471,
+              "AC@3": 0.7273,
+              "AC@5": 0.8678,
+              "Avg@5": 0.6474,
+              "MRR": 0.565,
+              "Chance@5": 0.5,
+              "Lift@5": 0.7355,
+              "mean_runtime_ms": 406.014
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.36,
+              "AC@3": 0.728,
+              "AC@5": 0.864,
+              "Avg@5": 0.6507,
+              "MRR": 0.5722,
+              "Chance@5": 0.5,
+              "Lift@5": 0.728,
+              "mean_runtime_ms": 408.004
+            },
+            "aurc": 0.2947
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1326,
+            "false_alarm_rate": 0.5671
+          }
+        }
+      },
+      "0.8": {
+        "p_miss": 0.8,
+        "step_runtime_sec": 26.45,
+        "test_split_70pct": {
+          "n_cases": 87,
+          "mean_T_sys": 0.7214,
+          "mean_T_rc": 0.5806,
+          "vanilla_baro": {
+            "AC@1": 0.1839,
+            "AC@3": 0.4368,
+            "AC@5": 0.5402,
+            "Avg@5": 0.387,
+            "MRR": 0.3677,
+            "Chance@5": 0.5,
+            "Lift@5": 0.0805,
+            "mean_runtime_ms": 344.306
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 1.0,
+            "abstention_rate": 0.0,
+            "selective_risk_ac3": 0.4368,
+            "mnar_recovery_rate": 0.8736,
+            "accepted_metrics": {
+              "AC@1": 0.1724,
+              "AC@3": 0.5632,
+              "AC@5": 0.7701,
+              "Avg@5": 0.5019,
+              "MRR": 0.4225,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5402,
+              "mean_runtime_ms": 423.761
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.1724,
+              "AC@3": 0.5632,
+              "AC@5": 0.7701,
+              "Avg@5": 0.5019,
+              "MRR": 0.4225,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5402,
+              "mean_runtime_ms": 423.761
+            },
+            "aurc": 0.4401
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1747,
+            "false_alarm_rate": 0.6513
+          }
+        },
+        "calibration_split_30pct": {
+          "n_cases": 38,
+          "mean_T_sys": 0.7201,
+          "mean_T_rc": 0.561,
+          "vanilla_baro": {
+            "AC@1": 0.1053,
+            "AC@3": 0.3158,
+            "AC@5": 0.3684,
+            "Avg@5": 0.2632,
+            "MRR": 0.2775,
+            "Chance@5": 0.5,
+            "Lift@5": -0.2632,
+            "mean_runtime_ms": 306.731
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.9737,
+            "abstention_rate": 0.0263,
+            "selective_risk_ac3": 0.4595,
+            "mnar_recovery_rate": 0.8684,
+            "accepted_metrics": {
+              "AC@1": 0.1892,
+              "AC@3": 0.5405,
+              "AC@5": 0.7297,
+              "Avg@5": 0.4865,
+              "MRR": 0.4203,
+              "Chance@5": 0.5,
+              "Lift@5": 0.4595,
+              "mean_runtime_ms": 478.903
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.1842,
+              "AC@3": 0.5263,
+              "AC@5": 0.7105,
+              "Avg@5": 0.4737,
+              "MRR": 0.4125,
+              "Chance@5": 0.5,
+              "Lift@5": 0.4211,
+              "mean_runtime_ms": 467.53
+            },
+            "aurc": 0.3865
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1967,
+            "false_alarm_rate": 0.6316
+          }
+        },
+        "full_cross_validated_125": {
+          "n_cases": 125,
+          "mean_T_sys": 0.721,
+          "mean_T_rc": 0.5746,
+          "vanilla_baro": {
+            "AC@1": 0.16,
+            "AC@3": 0.4,
+            "AC@5": 0.488,
+            "Avg@5": 0.3493,
+            "MRR": 0.3403,
+            "Chance@5": 0.5,
+            "Lift@5": -0.024,
+            "mean_runtime_ms": 332.883
+          },
+          "passive_abstention": {
+            "coverage": 0.0,
+            "abstention_rate": 1.0,
+            "selective_risk_ac3": 0.0,
+            "accepted_metrics": {
+              "AC@1": 0.0,
+              "AC@3": 0.0,
+              "AC@5": 0.0,
+              "Avg@5": 0.0,
+              "MRR": 0.0,
+              "Chance@5": 0.5,
+              "Lift@5": 0.0,
+              "mean_runtime_ms": 0.0
+            }
+          },
+          "constrained_xaiops_full": {
+            "coverage": 0.992,
+            "abstention_rate": 0.008,
+            "selective_risk_ac3": 0.4435,
+            "mnar_recovery_rate": 0.872,
+            "accepted_metrics": {
+              "AC@1": 0.1774,
+              "AC@3": 0.5565,
+              "AC@5": 0.7581,
+              "Avg@5": 0.4973,
+              "MRR": 0.4218,
+              "Chance@5": 0.5,
+              "Lift@5": 0.5161,
+              "mean_runtime_ms": 440.215
+            },
+            "unconditional_metrics": {
+              "AC@1": 0.176,
+              "AC@3": 0.552,
+              "AC@5": 0.752,
+              "Avg@5": 0.4933,
+              "MRR": 0.4194,
+              "Chance@5": 0.5,
+              "Lift@5": 0.504,
+              "mean_runtime_ms": 437.067
+            },
+            "aurc": 0.4227
+          },
+          "anomaly_detection": {
+            "auc_pr": 0.1803,
+            "false_alarm_rate": 0.6453
+          }
+        }
+      }
+    }
+  }
+}

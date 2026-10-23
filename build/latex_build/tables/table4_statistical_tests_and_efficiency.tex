@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Non-Parametric Statistical Significance Tests and Resource Efficiency.}
+\label{tab:statistics_efficiency}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|cccc}
+\hline
+\textbf{Comparison} & \textbf{Wilcoxon $p$} & \textbf{Holm-Bonf. $p_{\text{adj}}$} & \textbf{Cliff's $\delta$} & \textbf{Effect Size} \\
+\hline
+Constrained-xAIOps vs. Vanilla BARO (40\% MNAR) & $< 0.0001$ & $< 0.0001$ & +0.464 & medium \\
+Constrained-xAIOps vs. $\epsilon$-Diagnosis (40\% MNAR) & 0.0013 & 0.0013 & +0.152 & small \\
+\hline
+\multicolumn{5}{l}{\textbf{Computational Efficiency (per 125-case run):}} \\
+\multicolumn{5}{l}{Mean Inference Latency: 3.82 ms \quad Peak RAM: 218.4 MB \quad Concurrency: 16 threads \quad Total Time: 2276.8 s} \\
+\hline
+\end{tabular}
+}
+\end{table}

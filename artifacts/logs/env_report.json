@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "python_version": "3.11.8 (tags/v3.11.8:db85d51, Feb  6 2024, 22:03:32) [MSC v.1937 64 bit (AMD64)]",
+  "python_version_tuple": [
+    3,
+    11,
+    8
+  ],
+  "platform": "Windows-10-10.0.26300-SP0",
+  "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+  "hardware": {
+    "total_ram_gb": 23.63,
+    "available_ram_gb": 11.88,
+    "cpu_cores_logical": 16,
+    "cpu_cores_physical": 12
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "21.0.0",
+    "scipy": "1.16.0",
+    "sklearn": "1.5.2",
+    "shap": "0.49.1",
+    "pydantic": "2.11.7",
+    "yaml": "6.0.2",
+    "fastapi": "0.143.2",
+    "uvicorn": "0.54.0",
+    "streamlit": "1.47.1",
+    "matplotlib": "3.11.1",
+    "seaborn": "0.13.2",
+    "psutil": "7.2.2",
+    "pytest": "9.1.1",
+    "requests": "2.32.4"
+  }
+}

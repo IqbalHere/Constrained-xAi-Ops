@@ -1,0 +1,64 @@
+# kube-prometheus-stack minimal values for constrained-xAIOps testbed
+# Optimized for local Minikube / Kind clusters (4 CPUs, 8GB RAM or 2 CPUs, 3.5GB RAM fallback)
+
+defaultRules:
+  create: true
+  rules:
+    alertmanager: false
+    etcd: false
+    kubeScheduler: false
+
+global:
+  scrapeInterval: 15s
+  scrapeTimeout: 10s
+  evaluationInterval: 15s
+
+prometheus:
+  prometheusSpec:
+    scrapeInterval: 15s
+    evaluationInterval: 15s
+    retention: 6h
+    retentionSize: "2Gi"
+    resources:
+      requests:
+        cpu: 150m
+        memory: 256Mi
+      limits:
+        cpu: 500m
+        memory: 512Mi
+    serviceMonitorSelectorNilUsesHelmValues: false
+    podMonitorSelectorNilUsesHelmValues: false
+
+alertmanager:
+  enabled: false
+
+grafana:
+  enabled: true
+  adminPassword: "admin"
+  resources:
+    requests:
+      cpu: 50m
+      memory: 64Mi
+    limits:
+      cpu: 150m
+      memory: 128Mi
+
+kubeStateMetrics:
+  enabled: true
+  resources:
+    requests:
+      cpu: 20m
+      memory: 32Mi
+    limits:
+      cpu: 50m
+      memory: 64Mi
+
+nodeExporter:
+  enabled: true
+  resources:
+    requests:
+      cpu: 20m
+      memory: 32Mi
+    limits:
+      cpu: 50m
+      memory: 64Mi

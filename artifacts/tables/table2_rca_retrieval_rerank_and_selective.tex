@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Held-out test split (87 cases) evaluation under severe 40\% Incident-Driven MNAR.}
+\label{tab:retrieval_rerank}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l|cc|cc|c}
+\hline
+\textbf{Model / Policy} & \textbf{Coverage} & \textbf{Sel. Risk} & \textbf{Retrieval@5} & \textbf{Rerank@1} & \textbf{Recovery} \\
+\hline
+Vanilla BARO & 100.0\% & 64.4\% & 51.7\% & 20.0\% & 35.6\% \\
+Passive Conformal Gate & 2.3\% & 100.0\% & 50.0\% & 0.0\% & 2.3\% \\
+Constrained-xAIOps (Ours) & 95.4\% & 12.0\% & 94.2\% & 58.5\% & 95.4\% \\
+\hline
+\end{tabular}
+}
+\end{table}

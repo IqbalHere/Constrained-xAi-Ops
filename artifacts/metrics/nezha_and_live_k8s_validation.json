@@ -1,0 +1,76 @@
+{
+  "status": "VERIFIED_COMPLIANT",
+  "nezha_benchmark_evaluation": {
+    "trace_1_podchaos_cartservice": {
+      "case_id": "nezha_podchaos_cartservice_42",
+      "root_cause_service": "cartservice",
+      "ground_truth_indicator": "cartservice_cpu_usage_ratio",
+      "constrained_xaiops": {
+        "fidelity_at_1": 1.0,
+        "fidelity_at_3": 1.0,
+        "jaccard_at_3": 0.2,
+        "gini_sparsity": 0.249,
+        "reliability_score": 0.1746
+      },
+      "naive_treeshap": {
+        "fidelity_at_1": 1.0,
+        "fidelity_at_3": 1.0,
+        "jaccard_at_3": 0.5,
+        "gini_sparsity": 0.4092,
+        "reliability_score": 0.2222
+      }
+    },
+    "trace_2_networkchaos_checkoutservice": {
+      "case_id": "nezha_networkchaos_checkoutservice_1024",
+      "root_cause_service": "checkoutservice",
+      "ground_truth_indicator": "checkoutservice_rpc_server_duration_p99_ms",
+      "constrained_xaiops": {
+        "fidelity_at_1": 0.0,
+        "fidelity_at_3": 1.0,
+        "jaccard_at_3": 1.0,
+        "gini_sparsity": 0.5439,
+        "reliability_score": 1.0
+      },
+      "naive_treeshap": {
+        "fidelity_at_1": 0.0,
+        "fidelity_at_3": 1.0,
+        "jaccard_at_3": 1.0,
+        "gini_sparsity": 0.5492,
+        "reliability_score": 1.0
+      }
+    },
+    "aggregate_fidelity_metrics": {
+      "constrained_xaiops": {
+        "mean_fidelity_at_1": 0.5,
+        "mean_fidelity_at_3": 1.0,
+        "mean_jaccard_at_3": 0.6
+      },
+      "naive_treeshap": {
+        "mean_fidelity_at_1": 0.5,
+        "mean_fidelity_at_3": 1.0,
+        "mean_jaccard_at_3": 0.75
+      }
+    }
+  },
+  "live_k8s_testbed_verification": {
+    "case_id": "live_k8s_podkill_cartservice_01",
+    "data_source_tag": "LIVE_K8S_TESTBED",
+    "cartservice_outcome": "ESCALATE_MNAR_BLACKOUT",
+    "cartservice_trust_score": 0.6774,
+    "cartservice_anomaly_score": 0.05,
+    "triggered_escalate_mnar_blackout": true,
+    "total_services_evaluated": 10,
+    "service_decisions": {
+      "adservice": "ABSTAIN_LOW_TRUST",
+      "cartservice": "ESCALATE_MNAR_BLACKOUT",
+      "checkoutservice": "ABSTAIN_LOW_TRUST",
+      "currencyservice": "ABSTAIN_LOW_TRUST",
+      "emailservice": "ABSTAIN_LOW_TRUST",
+      "frontend": "ABSTAIN_LOW_TRUST",
+      "paymentservice": "ABSTAIN_LOW_TRUST",
+      "productcatalogservice": "ABSTAIN_LOW_TRUST",
+      "recommendationservice": "ABSTAIN_LOW_TRUST",
+      "shippingservice": "ABSTAIN_LOW_TRUST"
+    }
+  }
+}
